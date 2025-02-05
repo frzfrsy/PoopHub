@@ -1795,8 +1795,6 @@ Poop["_IsLoaded"].Parent = Poop["_PoopHub"]
 Poop["_IsGoing"].Name = "IsGoing"
 Poop["_IsGoing"].Parent = Poop["_PoopHub"]
 
-Poop["_PoopHub"].Parent = game.CoreGui
-
 local fake_module_scripts = {}
 
 local function WEFFEOD_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Icon.OneStepProcess
@@ -2783,3 +2781,4 @@ coroutine.wrap(WTKVSG_fake_script)()
 coroutine.wrap(AODFJ_fake_script)()
 coroutine.wrap(JUZO_fake_script)()
 coroutine.wrap(DNAJW_fake_script)()
+Poop["_PoopHub"].Parent = game.CoreGui
