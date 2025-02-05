@@ -3,7 +3,7 @@ if browse then
 	browse:Destroy()
 end
 
-local Pooped = {
+local Poop = {
 	["_PoopHub"] = Instance.new("ScreenGui");
 	["_Frame"] = Instance.new("Frame");
 	["_UICorner"] = Instance.new("UICorner");
@@ -158,1428 +158,1651 @@ local Pooped = {
 	["_UIStroke23"] = Instance.new("UIStroke");
 	["_LocalScript25"] = Instance.new("LocalScript");
 	["_Description19"] = Instance.new("TextLabel");
-	["_TABCredits"] = Instance.new("TextButton");
-	["_LocalScript26"] = Instance.new("LocalScript");
-	["_Credits"] = Instance.new("Frame");
-	["_ImageLabel"] = Instance.new("ImageLabel");
+	["_FreeRadioBoombox"] = Instance.new("TextButton");
+	["_Title21"] = Instance.new("TextLabel");
 	["_UIStroke24"] = Instance.new("UIStroke");
-	["_Name"] = Instance.new("TextLabel");
-	["_Job"] = Instance.new("TextLabel");
-	["_WhenGUIDestroying"] = Instance.new("Sound");
-	["_HoveringClose"] = Instance.new("Sound");
-	["_RestoreUp"] = Instance.new("ImageButton");
+	["_LocalScript26"] = Instance.new("LocalScript");
+	["_Description20"] = Instance.new("TextLabel");
+	["_DollhouseRoleplay"] = Instance.new("TextButton");
+	["_Title22"] = Instance.new("TextLabel");
 	["_UIStroke25"] = Instance.new("UIStroke");
 	["_LocalScript27"] = Instance.new("LocalScript");
+	["_Description21"] = Instance.new("TextLabel");
+	["_HaikyuuLegends"] = Instance.new("TextButton");
+	["_Title23"] = Instance.new("TextLabel");
+	["_UIStroke26"] = Instance.new("UIStroke");
+	["_LocalScript28"] = Instance.new("LocalScript");
+	["_Description22"] = Instance.new("TextLabel");
+	["_HideSeekExtreme"] = Instance.new("TextButton");
+	["_Title24"] = Instance.new("TextLabel");
+	["_UIStroke27"] = Instance.new("UIStroke");
+	["_LocalScript29"] = Instance.new("LocalScript");
+	["_Description23"] = Instance.new("TextLabel");
+	["_TABCredits"] = Instance.new("TextButton");
+	["_LocalScript30"] = Instance.new("LocalScript");
+	["_Credits"] = Instance.new("Frame");
+	["_ImageLabel"] = Instance.new("ImageLabel");
+	["_UIStroke28"] = Instance.new("UIStroke");
+	["_Name"] = Instance.new("TextLabel");
+	["_Job"] = Instance.new("TextLabel");
+	["_PoopLogo"] = Instance.new("ImageLabel");
+	["_TweeningMusic"] = Instance.new("Sound");
+	["_HoveringClose"] = Instance.new("Sound");
+	["_RestoreUp"] = Instance.new("ImageButton");
+	["_UIStroke29"] = Instance.new("UIStroke");
+	["_LocalScript31"] = Instance.new("LocalScript");
 	["_SoundSystem"] = Instance.new("LocalScript");
 	["_hovers"] = Instance.new("Sound");
 	["_clicking"] = Instance.new("Sound");
-	["_UntouchableifLoading"] = Instance.new("LocalScript");
+	["_UntouchableifLoadingINTRO"] = Instance.new("LocalScript");
 	["_IsLoaded"] = Instance.new("BoolValue");
-	["_IsDestroyed"] = Instance.new("BoolValue");
+	["_IsGoing"] = Instance.new("BoolValue");
+	["_UntouchableifLoadingOUTRO"] = Instance.new("LocalScript");
 }
 
-Pooped["_PoopHub"].IgnoreGuiInset = true
-Pooped["_PoopHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
-Pooped["_PoopHub"].Name = "PoopHub"
-
-Pooped["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_Frame"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
-Pooped["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Frame"].BorderSizePixel = 0
-Pooped["_Frame"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Pooped["_Frame"].Size = UDim2.new(0, 400, 0, 250)
-Pooped["_Frame"].Parent = Pooped["_PoopHub"]
-
-Pooped["_UICorner"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner"].Parent = Pooped["_Frame"]
-
-Pooped["_DropShadowHolder"].BackgroundTransparency = 1
-Pooped["_DropShadowHolder"].BorderSizePixel = 0
-Pooped["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
-Pooped["_DropShadowHolder"].ZIndex = 0
-Pooped["_DropShadowHolder"].Name = "DropShadowHolder"
-Pooped["_DropShadowHolder"].Parent = Pooped["_Frame"]
-
-Pooped["_DropShadow"].Image = "rbxassetid://6014261993"
-Pooped["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_DropShadow"].ImageTransparency = 0.5
-Pooped["_DropShadow"].ScaleType = Enum.ScaleType.Slice
-Pooped["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
-Pooped["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_DropShadow"].BackgroundTransparency = 1
-Pooped["_DropShadow"].BorderSizePixel = 0
-Pooped["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Pooped["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
-Pooped["_DropShadow"].ZIndex = 0
-Pooped["_DropShadow"].Name = "DropShadow"
-Pooped["_DropShadow"].Parent = Pooped["_DropShadowHolder"]
-
-Pooped["_Header"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
-Pooped["_Header"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Header"].BorderSizePixel = 0
-Pooped["_Header"].Size = UDim2.new(1, 0, 0, 24)
-Pooped["_Header"].Name = "Header"
-Pooped["_Header"].Parent = Pooped["_Frame"]
-
-Pooped["_UICorner1"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner1"].Parent = Pooped["_Header"]
-
-Pooped["_Extension"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Extension"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
-Pooped["_Extension"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Extension"].BorderSizePixel = 0
-Pooped["_Extension"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Extension"].Size = UDim2.new(1, 0, 1, -12)
-Pooped["_Extension"].Name = "Extension"
-Pooped["_Extension"].Parent = Pooped["_Header"]
-
-Pooped["_Icon"].Image = "rbxassetid://886270278"
-Pooped["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Icon"].BackgroundTransparency = 1
-Pooped["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Icon"].BorderSizePixel = 0
-Pooped["_Icon"].Size = UDim2.new(0, 24, 1, 0)
-Pooped["_Icon"].Name = "Icon"
-Pooped["_Icon"].Parent = Pooped["_Header"]
-
-Pooped["_UICorner2"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner2"].Parent = Pooped["_Icon"]
-
-Pooped["_Title"].Font = Enum.Font.SourceSans
-Pooped["_Title"].Text = "Stay humble, eh. – Poop Hub"
-Pooped["_Title"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
-Pooped["_Title"].TextScaled = true
-Pooped["_Title"].TextSize = 20
-Pooped["_Title"].TextStrokeTransparency = 0
-Pooped["_Title"].TextWrapped = true
-Pooped["_Title"].TextXAlignment = Enum.TextXAlignment.Left
-Pooped["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title"].BackgroundTransparency = 1
-Pooped["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title"].BorderSizePixel = 0
-Pooped["_Title"].Position = UDim2.new(0, 24, 0, 0)
-Pooped["_Title"].Size = UDim2.new(0.5, -24, 1, 0)
-Pooped["_Title"].Name = "Title"
-Pooped["_Title"].Parent = Pooped["_Header"]
-
-Pooped["_UIPadding"].PaddingLeft = UDim.new(0, 4)
-Pooped["_UIPadding"].Parent = Pooped["_Title"]
-
-Pooped["_UITextSizeConstraint"].MaxTextSize = 20
-Pooped["_UITextSizeConstraint"].Parent = Pooped["_Title"]
-
-Pooped["_Close"].Font = Enum.Font.SourceSans
-Pooped["_Close"].Text = "X"
-Pooped["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Close"].TextScaled = true
-Pooped["_Close"].TextSize = 14
-Pooped["_Close"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
-Pooped["_Close"].TextWrapped = true
-Pooped["_Close"].AnchorPoint = Vector2.new(1, 0)
-Pooped["_Close"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Close"].BackgroundTransparency = 1
-Pooped["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Close"].BorderSizePixel = 0
-Pooped["_Close"].Position = UDim2.new(1, 0, 0, 0)
-Pooped["_Close"].Size = UDim2.new(0, 24, 1, 0)
-Pooped["_Close"].Name = "Close"
-Pooped["_Close"].Parent = Pooped["_Header"]
-
-Pooped["_Minimise"].Font = Enum.Font.SourceSans
-Pooped["_Minimise"].Text = "–"
-Pooped["_Minimise"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Minimise"].TextScaled = true
-Pooped["_Minimise"].TextSize = 14
-Pooped["_Minimise"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
-Pooped["_Minimise"].TextWrapped = true
-Pooped["_Minimise"].AnchorPoint = Vector2.new(1, 0)
-Pooped["_Minimise"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
-Pooped["_Minimise"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Minimise"].BorderSizePixel = 0
-Pooped["_Minimise"].Position = UDim2.new(1, -24, 0, 0)
-Pooped["_Minimise"].Size = UDim2.new(0, 24, 1, 0)
-Pooped["_Minimise"].Name = "Minimise"
-Pooped["_Minimise"].Parent = Pooped["_Header"]
-
-Pooped["_JoinWhatsAppGroup"].Font = Enum.Font.SourceSans
-Pooped["_JoinWhatsAppGroup"].Text = "Join WhatsApp"
-Pooped["_JoinWhatsAppGroup"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_JoinWhatsAppGroup"].TextScaled = true
-Pooped["_JoinWhatsAppGroup"].TextSize = 14
-Pooped["_JoinWhatsAppGroup"].TextWrapped = true
-Pooped["_JoinWhatsAppGroup"].AnchorPoint = Vector2.new(1, 0)
-Pooped["_JoinWhatsAppGroup"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_JoinWhatsAppGroup"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_JoinWhatsAppGroup"].BorderSizePixel = 0
-Pooped["_JoinWhatsAppGroup"].Position = UDim2.new(1, -49, 0, 3)
-Pooped["_JoinWhatsAppGroup"].Size = UDim2.new(0.5, -100, 1, -6)
-Pooped["_JoinWhatsAppGroup"].Name = "JoinWhatsAppGroup"
-Pooped["_JoinWhatsAppGroup"].Parent = Pooped["_Header"]
-
-Pooped["_UICorner3"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner3"].Parent = Pooped["_JoinWhatsAppGroup"]
-
-Pooped["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke"].Parent = Pooped["_JoinWhatsAppGroup"]
-
-Pooped["_UITextSizeConstraint1"].MaxTextSize = 14
-Pooped["_UITextSizeConstraint1"].Parent = Pooped["_JoinWhatsAppGroup"]
-
-Pooped["_PromptClose"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_PromptClose"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
-Pooped["_PromptClose"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_PromptClose"].BorderSizePixel = 0
-Pooped["_PromptClose"].Position = UDim2.new(0.5, 0, 0.5, 0)
-Pooped["_PromptClose"].Size = UDim2.new(0, 300, 0, 150)
-Pooped["_PromptClose"].Visible = false
-Pooped["_PromptClose"].ZIndex = 3
-Pooped["_PromptClose"].Name = "PromptClose"
-Pooped["_PromptClose"].Parent = Pooped["_Frame"]
-
-Pooped["_UICorner4"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner4"].Parent = Pooped["_PromptClose"]
-
-Pooped["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke1"].Parent = Pooped["_PromptClose"]
-
-Pooped["_StoryOfPoopTheHub"].Font = Enum.Font.SourceSans
-Pooped["_StoryOfPoopTheHub"].Text = "I know I am a poop. I was made in a toilet, dumped into a sewer, and then a mysterious guy took me and inserted me into a plastic bag. He took me to his room and started making humiliating projects on me. And now I have turned into some kind of user interface. What the fu**... The thing I will never forget is his name: Creepstu. Are you really, really sure you want to close this hub? Are you doing this on purpose?"
-Pooped["_StoryOfPoopTheHub"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_StoryOfPoopTheHub"].TextScaled = true
-Pooped["_StoryOfPoopTheHub"].TextSize = 14
-Pooped["_StoryOfPoopTheHub"].TextStrokeTransparency = 0
-Pooped["_StoryOfPoopTheHub"].TextWrapped = true
-Pooped["_StoryOfPoopTheHub"].TextYAlignment = Enum.TextYAlignment.Top
-Pooped["_StoryOfPoopTheHub"].AnchorPoint = Vector2.new(0.5, 0)
-Pooped["_StoryOfPoopTheHub"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_StoryOfPoopTheHub"].BackgroundTransparency = 1
-Pooped["_StoryOfPoopTheHub"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_StoryOfPoopTheHub"].BorderSizePixel = 0
-Pooped["_StoryOfPoopTheHub"].Position = UDim2.new(0.5, 0, 0, 0)
-Pooped["_StoryOfPoopTheHub"].Size = UDim2.new(1, -8, 0, 120)
-Pooped["_StoryOfPoopTheHub"].ZIndex = 3
-Pooped["_StoryOfPoopTheHub"].Name = "StoryOfPoopTheHub"
-Pooped["_StoryOfPoopTheHub"].Parent = Pooped["_PromptClose"]
-
-Pooped["_UIPadding1"].PaddingTop = UDim.new(0, 4)
-Pooped["_UIPadding1"].Parent = Pooped["_StoryOfPoopTheHub"]
-
-Pooped["_UITextSizeConstraint2"].MaxTextSize = 14
-Pooped["_UITextSizeConstraint2"].Parent = Pooped["_StoryOfPoopTheHub"]
-
-Pooped["_SureToClose"].Font = Enum.Font.SourceSans
-Pooped["_SureToClose"].Text = "Destroy"
-Pooped["_SureToClose"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_SureToClose"].TextScaled = true
-Pooped["_SureToClose"].TextSize = 26
-Pooped["_SureToClose"].TextWrapped = true
-Pooped["_SureToClose"].AnchorPoint = Vector2.new(1, 1)
-Pooped["_SureToClose"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_SureToClose"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_SureToClose"].BorderSizePixel = 0
-Pooped["_SureToClose"].Position = UDim2.new(1, -4, 1, -4)
-Pooped["_SureToClose"].Size = UDim2.new(0, 144, 0, 26)
-Pooped["_SureToClose"].ZIndex = 3
-Pooped["_SureToClose"].Name = "SureToClose"
-Pooped["_SureToClose"].Parent = Pooped["_PromptClose"]
-
-Pooped["_UICorner5"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner5"].Parent = Pooped["_SureToClose"]
-
-Pooped["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke2"].Parent = Pooped["_SureToClose"]
-
-Pooped["_UITextSizeConstraint3"].MaxTextSize = 26
-Pooped["_UITextSizeConstraint3"].Parent = Pooped["_SureToClose"]
-
-Pooped["_Cancel"].Font = Enum.Font.SourceSans
-Pooped["_Cancel"].Text = "Cancel"
-Pooped["_Cancel"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Cancel"].TextScaled = true
-Pooped["_Cancel"].TextSize = 26
-Pooped["_Cancel"].TextWrapped = true
-Pooped["_Cancel"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Cancel"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Cancel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Cancel"].BorderSizePixel = 0
-Pooped["_Cancel"].Position = UDim2.new(0, 4, 1, -4)
-Pooped["_Cancel"].Size = UDim2.new(0, 144, 0, 26)
-Pooped["_Cancel"].ZIndex = 3
-Pooped["_Cancel"].Name = "Cancel"
-Pooped["_Cancel"].Parent = Pooped["_PromptClose"]
-
-Pooped["_UICorner6"].CornerRadius = UDim.new(0, 10)
-Pooped["_UICorner6"].Parent = Pooped["_Cancel"]
-
-Pooped["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke3"].Parent = Pooped["_Cancel"]
-
-Pooped["_UITextSizeConstraint4"].MaxTextSize = 26
-Pooped["_UITextSizeConstraint4"].Parent = Pooped["_Cancel"]
-
-Pooped["_TABUniversals"].Text = "Universals"
-Pooped["_TABUniversals"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
-Pooped["_TABUniversals"].TextStrokeTransparency = 0
-Pooped["_TABUniversals"].TextWrapped = true
-Pooped["_TABUniversals"].Active = false
-Pooped["_TABUniversals"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
-Pooped["_TABUniversals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_TABUniversals"].BorderSizePixel = 0
-Pooped["_TABUniversals"].Position = UDim2.new(0, 0, 0, 24)
-Pooped["_TABUniversals"].Selectable = false
-Pooped["_TABUniversals"].Size = UDim2.new(0, 64, 0, 24)
-Pooped["_TABUniversals"].Name = "TABUniversals"
-Pooped["_TABUniversals"].Parent = Pooped["_Frame"]
-
-Pooped["_TABGames"].Text = "Games"
-Pooped["_TABGames"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
-Pooped["_TABGames"].TextStrokeTransparency = 0
-Pooped["_TABGames"].TextWrapped = true
-Pooped["_TABGames"].Active = false
-Pooped["_TABGames"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
-Pooped["_TABGames"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_TABGames"].BorderSizePixel = 0
-Pooped["_TABGames"].Position = UDim2.new(0, 64, 0, 24)
-Pooped["_TABGames"].Selectable = false
-Pooped["_TABGames"].Size = UDim2.new(0, 47, 0, 24)
-Pooped["_TABGames"].Name = "TABGames"
-Pooped["_TABGames"].Parent = Pooped["_Frame"]
-
-Pooped["_NotLoadedYet"].Font = Enum.Font.SourceSans
-Pooped["_NotLoadedYet"].Text = "Poop Hub is waiting for itself to load"
-Pooped["_NotLoadedYet"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
-Pooped["_NotLoadedYet"].TextSize = 20
-Pooped["_NotLoadedYet"].TextStrokeTransparency = 0
-Pooped["_NotLoadedYet"].AnchorPoint = Vector2.new(0.5, 1)
-Pooped["_NotLoadedYet"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_NotLoadedYet"].BackgroundTransparency = 1
-Pooped["_NotLoadedYet"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_NotLoadedYet"].BorderSizePixel = 0
-Pooped["_NotLoadedYet"].Position = UDim2.new(0.5, 0, 1, 0)
-Pooped["_NotLoadedYet"].Size = UDim2.new(0, 260, 0, 20)
-Pooped["_NotLoadedYet"].Visible = false
-Pooped["_NotLoadedYet"].Name = "NotLoadedYet"
-Pooped["_NotLoadedYet"].Parent = Pooped["_Frame"]
-
-Pooped["_Universals"].AutomaticCanvasSize = Enum.AutomaticSize.XY
-Pooped["_Universals"].ScrollBarImageColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.00000131130219)
-Pooped["_Universals"].ScrollBarThickness = 0
-Pooped["_Universals"].ScrollingDirection = Enum.ScrollingDirection.Y
-Pooped["_Universals"].BackgroundColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Pooped["_Universals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Universals"].BorderSizePixel = 0
-Pooped["_Universals"].Position = UDim2.new(0, 0, 0, 48)
-Pooped["_Universals"].Selectable = false
-Pooped["_Universals"].Size = UDim2.new(1, 0, 1, -58)
-Pooped["_Universals"].Visible = false
-Pooped["_Universals"].ZIndex = 2
-Pooped["_Universals"].Name = "Universals"
-Pooped["_Universals"].Parent = Pooped["_Frame"]
-
-Pooped["_AimbotV3"].Font = Enum.Font.SourceSans
-Pooped["_AimbotV3"].Text = ""
-Pooped["_AimbotV3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_AimbotV3"].TextSize = 14
-Pooped["_AimbotV3"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_AimbotV3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_AimbotV3"].BorderSizePixel = 0
-Pooped["_AimbotV3"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_AimbotV3"].ZIndex = 2
-Pooped["_AimbotV3"].Name = "AimbotV3"
-Pooped["_AimbotV3"].Parent = Pooped["_Universals"]
-
-Pooped["_Title1"].Font = Enum.Font.SourceSansBold
-Pooped["_Title1"].Text = "Aimbot V3"
-Pooped["_Title1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title1"].TextScaled = true
-Pooped["_Title1"].TextSize = 14
-Pooped["_Title1"].TextWrapped = true
-Pooped["_Title1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title1"].BackgroundTransparency = 1
-Pooped["_Title1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title1"].BorderSizePixel = 0
-Pooped["_Title1"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title1"].ZIndex = 2
-Pooped["_Title1"].Name = "Title"
-Pooped["_Title1"].Parent = Pooped["_AimbotV3"]
-
-Pooped["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke4"].Thickness = 2
-Pooped["_UIStroke4"].Parent = Pooped["_AimbotV3"]
-
-Pooped["_Description"].Font = Enum.Font.SourceSans
-Pooped["_Description"].Text = "Project Bullshit, Racist Dolphin. You know that script or no? Locks aim to player heads."
-Pooped["_Description"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description"].TextScaled = true
-Pooped["_Description"].TextSize = 14
-Pooped["_Description"].TextWrapped = true
-Pooped["_Description"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description"].BackgroundTransparency = 1
-Pooped["_Description"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description"].BorderSizePixel = 0
-Pooped["_Description"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description"].ZIndex = 2
-Pooped["_Description"].Name = "Description"
-Pooped["_Description"].Parent = Pooped["_AimbotV3"]
-
-Pooped["_UIPadding2"].PaddingBottom = UDim.new(0, 10)
-Pooped["_UIPadding2"].PaddingLeft = UDim.new(0, 10)
-Pooped["_UIPadding2"].PaddingTop = UDim.new(0, 10)
-Pooped["_UIPadding2"].Parent = Pooped["_Universals"]
-
-Pooped["_UIListLayout"].Padding = UDim.new(0, 10)
-Pooped["_UIListLayout"].Parent = Pooped["_Universals"]
-
-Pooped["_Antilag"].Font = Enum.Font.SourceSans
-Pooped["_Antilag"].Text = ""
-Pooped["_Antilag"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Antilag"].TextSize = 14
-Pooped["_Antilag"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Antilag"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Antilag"].BorderSizePixel = 0
-Pooped["_Antilag"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_Antilag"].ZIndex = 2
-Pooped["_Antilag"].Name = "Antilag"
-Pooped["_Antilag"].Parent = Pooped["_Universals"]
-
-Pooped["_Title2"].Font = Enum.Font.SourceSansBold
-Pooped["_Title2"].Text = "Antilag"
-Pooped["_Title2"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title2"].TextScaled = true
-Pooped["_Title2"].TextSize = 14
-Pooped["_Title2"].TextWrapped = true
-Pooped["_Title2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title2"].BackgroundTransparency = 1
-Pooped["_Title2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title2"].BorderSizePixel = 0
-Pooped["_Title2"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title2"].ZIndex = 2
-Pooped["_Title2"].Name = "Title"
-Pooped["_Title2"].Parent = Pooped["_Antilag"]
-
-Pooped["_Description1"].Font = Enum.Font.SourceSans
-Pooped["_Description1"].Text = "Lowers game quality to boost FPS. After clicking it, you will likely get huge frame drops if your device is not high-end."
-Pooped["_Description1"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description1"].TextScaled = true
-Pooped["_Description1"].TextSize = 14
-Pooped["_Description1"].TextWrapped = true
-Pooped["_Description1"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description1"].BackgroundTransparency = 1
-Pooped["_Description1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description1"].BorderSizePixel = 0
-Pooped["_Description1"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description1"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description1"].ZIndex = 2
-Pooped["_Description1"].Name = "Description"
-Pooped["_Description1"].Parent = Pooped["_Antilag"]
-
-Pooped["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke5"].Thickness = 2
-Pooped["_UIStroke5"].Parent = Pooped["_Antilag"]
-
-Pooped["_BackdoorExecutor"].Font = Enum.Font.SourceSans
-Pooped["_BackdoorExecutor"].Text = ""
-Pooped["_BackdoorExecutor"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_BackdoorExecutor"].TextSize = 14
-Pooped["_BackdoorExecutor"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_BackdoorExecutor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_BackdoorExecutor"].BorderSizePixel = 0
-Pooped["_BackdoorExecutor"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_BackdoorExecutor"].ZIndex = 2
-Pooped["_BackdoorExecutor"].Name = "BackdoorExecutor"
-Pooped["_BackdoorExecutor"].Parent = Pooped["_Universals"]
-
-Pooped["_Title3"].Font = Enum.Font.SourceSansBold
-Pooped["_Title3"].Text = "Backdoor Executor"
-Pooped["_Title3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title3"].TextScaled = true
-Pooped["_Title3"].TextSize = 14
-Pooped["_Title3"].TextWrapped = true
-Pooped["_Title3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title3"].BackgroundTransparency = 1
-Pooped["_Title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title3"].BorderSizePixel = 0
-Pooped["_Title3"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title3"].ZIndex = 2
-Pooped["_Title3"].Name = "Title"
-Pooped["_Title3"].Parent = Pooped["_BackdoorExecutor"]
-
-Pooped["_Description2"].Font = Enum.Font.SourceSans
-Pooped["_Description2"].Text = "Made in 2021? By iK4oS on GitHub, this has been archived/discontinued until further notice. An in-game interface/tool to scan every remote for backdoors."
-Pooped["_Description2"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description2"].TextScaled = true
-Pooped["_Description2"].TextSize = 14
-Pooped["_Description2"].TextWrapped = true
-Pooped["_Description2"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description2"].BackgroundTransparency = 1
-Pooped["_Description2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description2"].BorderSizePixel = 0
-Pooped["_Description2"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description2"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description2"].ZIndex = 2
-Pooped["_Description2"].Name = "Description"
-Pooped["_Description2"].Parent = Pooped["_BackdoorExecutor"]
-
-Pooped["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke6"].Thickness = 2
-Pooped["_UIStroke6"].Parent = Pooped["_BackdoorExecutor"]
-
-Pooped["_CMDX"].Font = Enum.Font.SourceSans
-Pooped["_CMDX"].Text = ""
-Pooped["_CMDX"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_CMDX"].TextSize = 14
-Pooped["_CMDX"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_CMDX"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_CMDX"].BorderSizePixel = 0
-Pooped["_CMDX"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_CMDX"].ZIndex = 2
-Pooped["_CMDX"].Name = "CMDX"
-Pooped["_CMDX"].Parent = Pooped["_Universals"]
-
-Pooped["_Title4"].Font = Enum.Font.SourceSansBold
-Pooped["_Title4"].Text = "CMD X"
-Pooped["_Title4"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title4"].TextScaled = true
-Pooped["_Title4"].TextSize = 14
-Pooped["_Title4"].TextWrapped = true
-Pooped["_Title4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title4"].BackgroundTransparency = 1
-Pooped["_Title4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title4"].BorderSizePixel = 0
-Pooped["_Title4"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title4"].ZIndex = 2
-Pooped["_Title4"].Name = "Title"
-Pooped["_Title4"].Parent = Pooped["_CMDX"]
-
-Pooped["_Description3"].Font = Enum.Font.SourceSans
-Pooped["_Description3"].Text = "U – Open and close output... Right Shift – Fill suggestion... ; – Focus on command bar... Q – Open and close... Left Shift + Backspace – Clear command bar... .cmds – List commands."
-Pooped["_Description3"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description3"].TextScaled = true
-Pooped["_Description3"].TextSize = 14
-Pooped["_Description3"].TextWrapped = true
-Pooped["_Description3"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description3"].BackgroundTransparency = 1
-Pooped["_Description3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description3"].BorderSizePixel = 0
-Pooped["_Description3"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description3"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description3"].ZIndex = 2
-Pooped["_Description3"].Name = "Description"
-Pooped["_Description3"].Parent = Pooped["_CMDX"]
-
-Pooped["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke7"].Thickness = 2
-Pooped["_UIStroke7"].Parent = Pooped["_CMDX"]
-
-Pooped["_DexExplorerWRD"].Font = Enum.Font.SourceSans
-Pooped["_DexExplorerWRD"].Text = ""
-Pooped["_DexExplorerWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_DexExplorerWRD"].TextSize = 14
-Pooped["_DexExplorerWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_DexExplorerWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_DexExplorerWRD"].BorderSizePixel = 0
-Pooped["_DexExplorerWRD"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_DexExplorerWRD"].ZIndex = 2
-Pooped["_DexExplorerWRD"].Name = "DexExplorerWRD"
-Pooped["_DexExplorerWRD"].Parent = Pooped["_Universals"]
-
-Pooped["_Title5"].Font = Enum.Font.SourceSansBold
-Pooped["_Title5"].Text = "Dex Explorer"
-Pooped["_Title5"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title5"].TextScaled = true
-Pooped["_Title5"].TextSize = 14
-Pooped["_Title5"].TextWrapped = true
-Pooped["_Title5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title5"].BackgroundTransparency = 1
-Pooped["_Title5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title5"].BorderSizePixel = 0
-Pooped["_Title5"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title5"].ZIndex = 2
-Pooped["_Title5"].Name = "Title"
-Pooped["_Title5"].Parent = Pooped["_DexExplorerWRD"]
-
-Pooped["_Description4"].Font = Enum.Font.SourceSans
-Pooped["_Description4"].Text = "By Babyhamsta, a game explorer GUI. Shows every instance of the game and all their properties. Useful for developers."
-Pooped["_Description4"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description4"].TextScaled = true
-Pooped["_Description4"].TextSize = 14
-Pooped["_Description4"].TextWrapped = true
-Pooped["_Description4"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description4"].BackgroundTransparency = 1
-Pooped["_Description4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description4"].BorderSizePixel = 0
-Pooped["_Description4"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description4"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description4"].ZIndex = 2
-Pooped["_Description4"].Name = "Description"
-Pooped["_Description4"].Parent = Pooped["_DexExplorerWRD"]
-
-Pooped["_UIStroke8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke8"].Thickness = 2
-Pooped["_UIStroke8"].Parent = Pooped["_DexExplorerWRD"]
-
-Pooped["_FrontFlipandBackFlipandAirjump"].Font = Enum.Font.SourceSans
-Pooped["_FrontFlipandBackFlipandAirjump"].Text = ""
-Pooped["_FrontFlipandBackFlipandAirjump"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_FrontFlipandBackFlipandAirjump"].TextSize = 14
-Pooped["_FrontFlipandBackFlipandAirjump"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_FrontFlipandBackFlipandAirjump"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_FrontFlipandBackFlipandAirjump"].BorderSizePixel = 0
-Pooped["_FrontFlipandBackFlipandAirjump"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_FrontFlipandBackFlipandAirjump"].ZIndex = 2
-Pooped["_FrontFlipandBackFlipandAirjump"].Name = "FrontFlipandBackFlipandAirjump"
-Pooped["_FrontFlipandBackFlipandAirjump"].Parent = Pooped["_Universals"]
-
-Pooped["_Title6"].Font = Enum.Font.SourceSansBold
-Pooped["_Title6"].Text = "Front Flip and Back Flip and Air Jump"
-Pooped["_Title6"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title6"].TextScaled = true
-Pooped["_Title6"].TextSize = 14
-Pooped["_Title6"].TextWrapped = true
-Pooped["_Title6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title6"].BackgroundTransparency = 1
-Pooped["_Title6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title6"].BorderSizePixel = 0
-Pooped["_Title6"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title6"].ZIndex = 2
-Pooped["_Title6"].Name = "Title"
-Pooped["_Title6"].Parent = Pooped["_FrontFlipandBackFlipandAirjump"]
-
-Pooped["_Description5"].Font = Enum.Font.SourceSans
-Pooped["_Description5"].Text = "FE, players can see you doing it so relax, it is not client-sided. This script is about parkour movements? Z – Front Flip... X – Back Flip... C – Air Jump."
-Pooped["_Description5"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description5"].TextScaled = true
-Pooped["_Description5"].TextSize = 14
-Pooped["_Description5"].TextWrapped = true
-Pooped["_Description5"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description5"].BackgroundTransparency = 1
-Pooped["_Description5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description5"].BorderSizePixel = 0
-Pooped["_Description5"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description5"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description5"].ZIndex = 2
-Pooped["_Description5"].Name = "Description"
-Pooped["_Description5"].Parent = Pooped["_FrontFlipandBackFlipandAirjump"]
-
-Pooped["_UIStroke9"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke9"].Thickness = 2
-Pooped["_UIStroke9"].Parent = Pooped["_FrontFlipandBackFlipandAirjump"]
-
-Pooped["_ToolAssistedSpeedrun"].Font = Enum.Font.SourceSans
-Pooped["_ToolAssistedSpeedrun"].Text = ""
-Pooped["_ToolAssistedSpeedrun"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ToolAssistedSpeedrun"].TextSize = 14
-Pooped["_ToolAssistedSpeedrun"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_ToolAssistedSpeedrun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ToolAssistedSpeedrun"].BorderSizePixel = 0
-Pooped["_ToolAssistedSpeedrun"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_ToolAssistedSpeedrun"].ZIndex = 2
-Pooped["_ToolAssistedSpeedrun"].Name = "ToolAssistedSpeedrun"
-Pooped["_ToolAssistedSpeedrun"].Parent = Pooped["_Universals"]
-
-Pooped["_Title7"].Font = Enum.Font.SourceSansBold
-Pooped["_Title7"].Text = "Tool Assisted Speedrun"
-Pooped["_Title7"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title7"].TextScaled = true
-Pooped["_Title7"].TextSize = 14
-Pooped["_Title7"].TextWrapped = true
-Pooped["_Title7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title7"].BackgroundTransparency = 1
-Pooped["_Title7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title7"].BorderSizePixel = 0
-Pooped["_Title7"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title7"].ZIndex = 2
-Pooped["_Title7"].Name = "Title"
-Pooped["_Title7"].Parent = Pooped["_ToolAssistedSpeedrun"]
-
-Pooped["_Description6"].Font = Enum.Font.SourceSans
-Pooped["_Description6"].Text = "By Tomato. Hahaha, why is the creator's name Tomato? Do you know the flashback script that is popular on mobile? This is for PC, use keybinds if needed."
-Pooped["_Description6"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description6"].TextScaled = true
-Pooped["_Description6"].TextSize = 14
-Pooped["_Description6"].TextWrapped = true
-Pooped["_Description6"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description6"].BackgroundTransparency = 1
-Pooped["_Description6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description6"].BorderSizePixel = 0
-Pooped["_Description6"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description6"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description6"].ZIndex = 2
-Pooped["_Description6"].Name = "Description"
-Pooped["_Description6"].Parent = Pooped["_ToolAssistedSpeedrun"]
-
-Pooped["_UIStroke10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke10"].Thickness = 2
-Pooped["_UIStroke10"].Parent = Pooped["_ToolAssistedSpeedrun"]
-
-Pooped["_Hydroxide"].Font = Enum.Font.SourceSans
-Pooped["_Hydroxide"].Text = ""
-Pooped["_Hydroxide"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Hydroxide"].TextSize = 14
-Pooped["_Hydroxide"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Hydroxide"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Hydroxide"].BorderSizePixel = 0
-Pooped["_Hydroxide"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_Hydroxide"].ZIndex = 2
-Pooped["_Hydroxide"].Name = "Hydroxide"
-Pooped["_Hydroxide"].Parent = Pooped["_Universals"]
-
-Pooped["_Title8"].Font = Enum.Font.SourceSansBold
-Pooped["_Title8"].Text = "Hydroxide"
-Pooped["_Title8"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title8"].TextScaled = true
-Pooped["_Title8"].TextSize = 14
-Pooped["_Title8"].TextWrapped = true
-Pooped["_Title8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title8"].BackgroundTransparency = 1
-Pooped["_Title8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title8"].BorderSizePixel = 0
-Pooped["_Title8"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title8"].ZIndex = 2
-Pooped["_Title8"].Name = "Title"
-Pooped["_Title8"].Parent = Pooped["_Hydroxide"]
-
-Pooped["_Description7"].Font = Enum.Font.SourceSans
-Pooped["_Description7"].Text = "By Upbolt on GitHub, features in Hydroxide are upvalue scanner, constant scanner, script scanner, module scanner, RemoteSpy and ClosureSpy. Lua runtime introspection and network capturing tool for games on the Roblox engine."
-Pooped["_Description7"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description7"].TextScaled = true
-Pooped["_Description7"].TextSize = 14
-Pooped["_Description7"].TextWrapped = true
-Pooped["_Description7"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description7"].BackgroundTransparency = 1
-Pooped["_Description7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description7"].BorderSizePixel = 0
-Pooped["_Description7"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description7"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description7"].ZIndex = 2
-Pooped["_Description7"].Name = "Description"
-Pooped["_Description7"].Parent = Pooped["_Hydroxide"]
-
-Pooped["_UIStroke11"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke11"].Thickness = 2
-Pooped["_UIStroke11"].Parent = Pooped["_Hydroxide"]
-
-Pooped["_InfiniteYield"].Font = Enum.Font.SourceSans
-Pooped["_InfiniteYield"].Text = ""
-Pooped["_InfiniteYield"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_InfiniteYield"].TextSize = 14
-Pooped["_InfiniteYield"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_InfiniteYield"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_InfiniteYield"].BorderSizePixel = 0
-Pooped["_InfiniteYield"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_InfiniteYield"].ZIndex = 2
-Pooped["_InfiniteYield"].Name = "InfiniteYield"
-Pooped["_InfiniteYield"].Parent = Pooped["_Universals"]
-
-Pooped["_Title9"].Font = Enum.Font.SourceSansBold
-Pooped["_Title9"].Text = "Infinite Yield"
-Pooped["_Title9"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title9"].TextScaled = true
-Pooped["_Title9"].TextSize = 14
-Pooped["_Title9"].TextWrapped = true
-Pooped["_Title9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title9"].BackgroundTransparency = 1
-Pooped["_Title9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title9"].BorderSizePixel = 0
-Pooped["_Title9"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title9"].ZIndex = 2
-Pooped["_Title9"].Name = "Title"
-Pooped["_Title9"].Parent = Pooped["_InfiniteYield"]
-
-Pooped["_Description8"].Font = Enum.Font.SourceSans
-Pooped["_Description8"].Text = "By EdgeIY on GitHub, the best command line script for roblox. You can learn how to use all the features of this script in the wiki!"
-Pooped["_Description8"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description8"].TextScaled = true
-Pooped["_Description8"].TextSize = 14
-Pooped["_Description8"].TextWrapped = true
-Pooped["_Description8"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description8"].BackgroundTransparency = 1
-Pooped["_Description8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description8"].BorderSizePixel = 0
-Pooped["_Description8"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description8"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description8"].ZIndex = 2
-Pooped["_Description8"].Name = "Description"
-Pooped["_Description8"].Parent = Pooped["_InfiniteYield"]
-
-Pooped["_UIStroke12"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke12"].Thickness = 2
-Pooped["_UIStroke12"].Parent = Pooped["_InfiniteYield"]
-
-Pooped["_Orca"].Font = Enum.Font.SourceSans
-Pooped["_Orca"].Text = ""
-Pooped["_Orca"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Orca"].TextSize = 14
-Pooped["_Orca"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Orca"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Orca"].BorderSizePixel = 0
-Pooped["_Orca"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_Orca"].ZIndex = 2
-Pooped["_Orca"].Name = "Orca"
-Pooped["_Orca"].Parent = Pooped["_Universals"]
-
-Pooped["_Title10"].Font = Enum.Font.SourceSansBold
-Pooped["_Title10"].Text = "Orca"
-Pooped["_Title10"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title10"].TextScaled = true
-Pooped["_Title10"].TextSize = 14
-Pooped["_Title10"].TextWrapped = true
-Pooped["_Title10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title10"].BackgroundTransparency = 1
-Pooped["_Title10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title10"].BorderSizePixel = 0
-Pooped["_Title10"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title10"].ZIndex = 2
-Pooped["_Title10"].Name = "Title"
-Pooped["_Title10"].Parent = Pooped["_Orca"]
-
-Pooped["_Description9"].Font = Enum.Font.SourceSans
-Pooped["_Description9"].Text = "By richie0866 on GitHub, general-purpose Roblox script hub designed to make convenient tasks easy and satisfying. Press K to open or close Orca. For the best experience, a 1080p monitor or above is recommended!"
-Pooped["_Description9"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description9"].TextScaled = true
-Pooped["_Description9"].TextSize = 14
-Pooped["_Description9"].TextWrapped = true
-Pooped["_Description9"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description9"].BackgroundTransparency = 1
-Pooped["_Description9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description9"].BorderSizePixel = 0
-Pooped["_Description9"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description9"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description9"].ZIndex = 2
-Pooped["_Description9"].Name = "Description"
-Pooped["_Description9"].Parent = Pooped["_Orca"]
-
-Pooped["_UIStroke13"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke13"].Thickness = 2
-Pooped["_UIStroke13"].Parent = Pooped["_Orca"]
-
-Pooped["_Owl"].Font = Enum.Font.SourceSans
-Pooped["_Owl"].Text = ""
-Pooped["_Owl"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Owl"].TextSize = 14
-Pooped["_Owl"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Owl"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Owl"].BorderSizePixel = 0
-Pooped["_Owl"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_Owl"].ZIndex = 2
-Pooped["_Owl"].Name = "Owl"
-Pooped["_Owl"].Parent = Pooped["_Universals"]
-
-Pooped["_Title11"].Font = Enum.Font.SourceSansBold
-Pooped["_Title11"].Text = "Owl"
-Pooped["_Title11"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title11"].TextScaled = true
-Pooped["_Title11"].TextSize = 14
-Pooped["_Title11"].TextWrapped = true
-Pooped["_Title11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title11"].BackgroundTransparency = 1
-Pooped["_Title11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title11"].BorderSizePixel = 0
-Pooped["_Title11"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title11"].ZIndex = 2
-Pooped["_Title11"].Name = "Title"
-Pooped["_Title11"].Parent = Pooped["_Owl"]
-
-Pooped["_Description10"].Font = Enum.Font.SourceSans
-Pooped["_Description10"].Text = "By CriShoux on GitHub, is it still working? This script involves an aimbot, among other features like extra-sensory perception (ESP), and what more?"
-Pooped["_Description10"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description10"].TextScaled = true
-Pooped["_Description10"].TextSize = 14
-Pooped["_Description10"].TextWrapped = true
-Pooped["_Description10"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description10"].BackgroundTransparency = 1
-Pooped["_Description10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description10"].BorderSizePixel = 0
-Pooped["_Description10"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description10"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description10"].ZIndex = 2
-Pooped["_Description10"].Name = "Description"
-Pooped["_Description10"].Parent = Pooped["_Owl"]
-
-Pooped["_UIStroke14"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke14"].Thickness = 2
-Pooped["_UIStroke14"].Parent = Pooped["_Owl"]
-
-Pooped["_SecureDarkDex"].Font = Enum.Font.SourceSans
-Pooped["_SecureDarkDex"].Text = ""
-Pooped["_SecureDarkDex"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_SecureDarkDex"].TextSize = 14
-Pooped["_SecureDarkDex"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_SecureDarkDex"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_SecureDarkDex"].BorderSizePixel = 0
-Pooped["_SecureDarkDex"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_SecureDarkDex"].ZIndex = 2
-Pooped["_SecureDarkDex"].Name = "SecureDarkDex"
-Pooped["_SecureDarkDex"].Parent = Pooped["_Universals"]
-
-Pooped["_Title12"].Font = Enum.Font.SourceSansBold
-Pooped["_Title12"].Text = "Secure Dark Dex"
-Pooped["_Title12"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title12"].TextScaled = true
-Pooped["_Title12"].TextSize = 14
-Pooped["_Title12"].TextWrapped = true
-Pooped["_Title12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title12"].BackgroundTransparency = 1
-Pooped["_Title12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title12"].BorderSizePixel = 0
-Pooped["_Title12"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title12"].ZIndex = 2
-Pooped["_Title12"].Name = "Title"
-Pooped["_Title12"].Parent = Pooped["_SecureDarkDex"]
-
-Pooped["_Description11"].Font = Enum.Font.SourceSans
-Pooped["_Description11"].Text = "By Babyhamsta on GitHub, what is this? It is like Dex Explorer but in a secured version."
-Pooped["_Description11"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description11"].TextScaled = true
-Pooped["_Description11"].TextSize = 14
-Pooped["_Description11"].TextWrapped = true
-Pooped["_Description11"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description11"].BackgroundTransparency = 1
-Pooped["_Description11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description11"].BorderSizePixel = 0
-Pooped["_Description11"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description11"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description11"].ZIndex = 2
-Pooped["_Description11"].Name = "Description"
-Pooped["_Description11"].Parent = Pooped["_SecureDarkDex"]
-
-Pooped["_UIStroke15"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke15"].Thickness = 2
-Pooped["_UIStroke15"].Parent = Pooped["_SecureDarkDex"]
-
-Pooped["_Space"].Font = Enum.Font.SourceSans
-Pooped["_Space"].Text = ""
-Pooped["_Space"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Space"].TextSize = 14
-Pooped["_Space"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_Space"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Space"].BorderSizePixel = 0
-Pooped["_Space"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_Space"].ZIndex = 2
-Pooped["_Space"].Name = "Space"
-Pooped["_Space"].Parent = Pooped["_Universals"]
-
-Pooped["_Title13"].Font = Enum.Font.SourceSansBold
-Pooped["_Title13"].Text = "Space"
-Pooped["_Title13"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title13"].TextScaled = true
-Pooped["_Title13"].TextSize = 14
-Pooped["_Title13"].TextWrapped = true
-Pooped["_Title13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title13"].BackgroundTransparency = 1
-Pooped["_Title13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title13"].BorderSizePixel = 0
-Pooped["_Title13"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title13"].ZIndex = 2
-Pooped["_Title13"].Name = "Title"
-Pooped["_Title13"].Parent = Pooped["_Space"]
-
-Pooped["_Description12"].Font = Enum.Font.SourceSans
-Pooped["_Description12"].Text = "By Lucasfin000 on GitHub, what is this? It is a Roblox script hub. I am not sure if it has been patched yet."
-Pooped["_Description12"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description12"].TextScaled = true
-Pooped["_Description12"].TextSize = 14
-Pooped["_Description12"].TextWrapped = true
-Pooped["_Description12"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description12"].BackgroundTransparency = 1
-Pooped["_Description12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description12"].BorderSizePixel = 0
-Pooped["_Description12"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description12"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description12"].ZIndex = 2
-Pooped["_Description12"].Name = "Description"
-Pooped["_Description12"].Parent = Pooped["_Space"]
-
-Pooped["_UIStroke16"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke16"].Thickness = 2
-Pooped["_UIStroke16"].Parent = Pooped["_Space"]
-
-Pooped["_UnnamedESP"].Font = Enum.Font.SourceSans
-Pooped["_UnnamedESP"].Text = ""
-Pooped["_UnnamedESP"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_UnnamedESP"].TextSize = 14
-Pooped["_UnnamedESP"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_UnnamedESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_UnnamedESP"].BorderSizePixel = 0
-Pooped["_UnnamedESP"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_UnnamedESP"].ZIndex = 2
-Pooped["_UnnamedESP"].Name = "UnnamedESP"
-Pooped["_UnnamedESP"].Parent = Pooped["_Universals"]
-
-Pooped["_Title14"].Font = Enum.Font.SourceSansBold
-Pooped["_Title14"].Text = "Unnamed ESP"
-Pooped["_Title14"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title14"].TextScaled = true
-Pooped["_Title14"].TextSize = 14
-Pooped["_Title14"].TextWrapped = true
-Pooped["_Title14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title14"].BackgroundTransparency = 1
-Pooped["_Title14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title14"].BorderSizePixel = 0
-Pooped["_Title14"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title14"].ZIndex = 2
-Pooped["_Title14"].Name = "Title"
-Pooped["_Title14"].Parent = Pooped["_UnnamedESP"]
-
-Pooped["_Description13"].Font = Enum.Font.SourceSans
-Pooped["_Description13"].Text = "By ic3w0lf22 on GitHub, this script was known in Synapse X, the paid executor. What is this? In my perspective, it is an overpowered ESP script."
-Pooped["_Description13"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description13"].TextScaled = true
-Pooped["_Description13"].TextSize = 14
-Pooped["_Description13"].TextWrapped = true
-Pooped["_Description13"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description13"].BackgroundTransparency = 1
-Pooped["_Description13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description13"].BorderSizePixel = 0
-Pooped["_Description13"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description13"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description13"].ZIndex = 2
-Pooped["_Description13"].Name = "Description"
-Pooped["_Description13"].Parent = Pooped["_UnnamedESP"]
-
-Pooped["_UIStroke17"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke17"].Thickness = 2
-Pooped["_UIStroke17"].Parent = Pooped["_UnnamedESP"]
-
-Pooped["_WalkOnWalls"].Font = Enum.Font.SourceSans
-Pooped["_WalkOnWalls"].Text = ""
-Pooped["_WalkOnWalls"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_WalkOnWalls"].TextSize = 14
-Pooped["_WalkOnWalls"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_WalkOnWalls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_WalkOnWalls"].BorderSizePixel = 0
-Pooped["_WalkOnWalls"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_WalkOnWalls"].ZIndex = 2
-Pooped["_WalkOnWalls"].Name = "WalkOnWalls"
-Pooped["_WalkOnWalls"].Parent = Pooped["_Universals"]
-
-Pooped["_Title15"].Font = Enum.Font.SourceSansBold
-Pooped["_Title15"].Text = "Walk on Walls"
-Pooped["_Title15"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title15"].TextScaled = true
-Pooped["_Title15"].TextSize = 14
-Pooped["_Title15"].TextWrapped = true
-Pooped["_Title15"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title15"].BackgroundTransparency = 1
-Pooped["_Title15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title15"].BorderSizePixel = 0
-Pooped["_Title15"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title15"].ZIndex = 2
-Pooped["_Title15"].Name = "Title"
-Pooped["_Title15"].Parent = Pooped["_WalkOnWalls"]
-
-Pooped["_Description14"].Font = Enum.Font.SourceSans
-Pooped["_Description14"].Text = "Walk on walls. It may be buggy in certain games. This script is ancient, though."
-Pooped["_Description14"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description14"].TextScaled = true
-Pooped["_Description14"].TextSize = 14
-Pooped["_Description14"].TextWrapped = true
-Pooped["_Description14"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description14"].BackgroundTransparency = 1
-Pooped["_Description14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description14"].BorderSizePixel = 0
-Pooped["_Description14"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description14"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description14"].ZIndex = 2
-Pooped["_Description14"].Name = "Description"
-Pooped["_Description14"].Parent = Pooped["_WalkOnWalls"]
-
-Pooped["_UIStroke18"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke18"].Thickness = 2
-Pooped["_UIStroke18"].Parent = Pooped["_WalkOnWalls"]
-
-Pooped["_AimbotWRD"].Font = Enum.Font.SourceSans
-Pooped["_AimbotWRD"].Text = ""
-Pooped["_AimbotWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_AimbotWRD"].TextSize = 14
-Pooped["_AimbotWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_AimbotWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_AimbotWRD"].BorderSizePixel = 0
-Pooped["_AimbotWRD"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_AimbotWRD"].ZIndex = 2
-Pooped["_AimbotWRD"].Name = "AimbotWRD"
-Pooped["_AimbotWRD"].Parent = Pooped["_Universals"]
-
-Pooped["_Title16"].Font = Enum.Font.SourceSansBold
-Pooped["_Title16"].Text = "Aimbot"
-Pooped["_Title16"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title16"].TextScaled = true
-Pooped["_Title16"].TextSize = 14
-Pooped["_Title16"].TextWrapped = true
-Pooped["_Title16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title16"].BackgroundTransparency = 1
-Pooped["_Title16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title16"].BorderSizePixel = 0
-Pooped["_Title16"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title16"].ZIndex = 2
-Pooped["_Title16"].Name = "Title"
-Pooped["_Title16"].Parent = Pooped["_AimbotWRD"]
-
-Pooped["_Description15"].Font = Enum.Font.SourceSans
-Pooped["_Description15"].Text = "By WeAreDevs, the execution is totally complex. This script has configurations, but I set it to my recommendations: TeamCheck yes, AimbotBypass no, and WallCheck yes."
-Pooped["_Description15"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description15"].TextScaled = true
-Pooped["_Description15"].TextSize = 14
-Pooped["_Description15"].TextWrapped = true
-Pooped["_Description15"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description15"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description15"].BackgroundTransparency = 1
-Pooped["_Description15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description15"].BorderSizePixel = 0
-Pooped["_Description15"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description15"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description15"].ZIndex = 2
-Pooped["_Description15"].Name = "Description"
-Pooped["_Description15"].Parent = Pooped["_AimbotWRD"]
-
-Pooped["_UIStroke19"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke19"].Thickness = 2
-Pooped["_UIStroke19"].Parent = Pooped["_AimbotWRD"]
-
-Pooped["_ESPWRD"].Font = Enum.Font.SourceSans
-Pooped["_ESPWRD"].Text = ""
-Pooped["_ESPWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ESPWRD"].TextSize = 14
-Pooped["_ESPWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
-Pooped["_ESPWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ESPWRD"].BorderSizePixel = 0
-Pooped["_ESPWRD"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_ESPWRD"].ZIndex = 2
-Pooped["_ESPWRD"].Name = "ESPWRD"
-Pooped["_ESPWRD"].Parent = Pooped["_Universals"]
-
-Pooped["_Title17"].Font = Enum.Font.SourceSansBold
-Pooped["_Title17"].Text = "ESP"
-Pooped["_Title17"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title17"].TextScaled = true
-Pooped["_Title17"].TextSize = 14
-Pooped["_Title17"].TextWrapped = true
-Pooped["_Title17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title17"].BackgroundTransparency = 1
-Pooped["_Title17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title17"].BorderSizePixel = 0
-Pooped["_Title17"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title17"].ZIndex = 2
-Pooped["_Title17"].Name = "Title"
-Pooped["_Title17"].Parent = Pooped["_ESPWRD"]
-
-Pooped["_Description16"].Font = Enum.Font.SourceSans
-Pooped["_Description16"].Text = "By WeAreDevs, this script makes all players visible through walls. You can see their distance and names."
-Pooped["_Description16"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description16"].TextScaled = true
-Pooped["_Description16"].TextSize = 14
-Pooped["_Description16"].TextWrapped = true
-Pooped["_Description16"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description16"].BackgroundTransparency = 1
-Pooped["_Description16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description16"].BorderSizePixel = 0
-Pooped["_Description16"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description16"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description16"].ZIndex = 2
-Pooped["_Description16"].Name = "Description"
-Pooped["_Description16"].Parent = Pooped["_ESPWRD"]
-
-Pooped["_UIStroke20"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke20"].Thickness = 2
-Pooped["_UIStroke20"].Parent = Pooped["_ESPWRD"]
-
-Pooped["_Games"].AutomaticCanvasSize = Enum.AutomaticSize.XY
-Pooped["_Games"].CanvasSize = UDim2.new(0, 0, 0, 0)
-Pooped["_Games"].ScrollBarImageColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.00000131130219)
-Pooped["_Games"].ScrollBarThickness = 0
-Pooped["_Games"].ScrollingDirection = Enum.ScrollingDirection.Y
-Pooped["_Games"].BackgroundColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
-Pooped["_Games"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Games"].BorderSizePixel = 0
-Pooped["_Games"].Position = UDim2.new(0, 0, 0, 48)
-Pooped["_Games"].Selectable = false
-Pooped["_Games"].Size = UDim2.new(1, 0, 1, -58)
-Pooped["_Games"].Visible = false
-Pooped["_Games"].ZIndex = 2
-Pooped["_Games"].Name = "Games"
-Pooped["_Games"].Parent = Pooped["_Frame"]
-
-Pooped["_UIPadding3"].PaddingBottom = UDim.new(0, 10)
-Pooped["_UIPadding3"].PaddingLeft = UDim.new(0, 10)
-Pooped["_UIPadding3"].PaddingTop = UDim.new(0, 10)
-Pooped["_UIPadding3"].Parent = Pooped["_Games"]
-
-Pooped["_UIListLayout1"].Padding = UDim.new(0, 10)
-Pooped["_UIListLayout1"].Parent = Pooped["_Games"]
-
-Pooped["_UnnamedShooter"].Font = Enum.Font.SourceSans
-Pooped["_UnnamedShooter"].Text = ""
-Pooped["_UnnamedShooter"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_UnnamedShooter"].TextSize = 14
-Pooped["_UnnamedShooter"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
-Pooped["_UnnamedShooter"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_UnnamedShooter"].BorderSizePixel = 0
-Pooped["_UnnamedShooter"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_UnnamedShooter"].ZIndex = 2
-Pooped["_UnnamedShooter"].Name = "UnnamedShooter"
-Pooped["_UnnamedShooter"].Parent = Pooped["_Games"]
-
-Pooped["_Title18"].Font = Enum.Font.SourceSansBold
-Pooped["_Title18"].Text = "Unnamed Shooter"
-Pooped["_Title18"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title18"].TextScaled = true
-Pooped["_Title18"].TextSize = 14
-Pooped["_Title18"].TextWrapped = true
-Pooped["_Title18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title18"].BackgroundTransparency = 1
-Pooped["_Title18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title18"].BorderSizePixel = 0
-Pooped["_Title18"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title18"].ZIndex = 2
-Pooped["_Title18"].Name = "Title"
-Pooped["_Title18"].Parent = Pooped["_UnnamedShooter"]
-
-Pooped["_UIStroke21"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke21"].Thickness = 2
-Pooped["_UIStroke21"].Parent = Pooped["_UnnamedShooter"]
-
-Pooped["_Description17"].Font = Enum.Font.SourceSans
-Pooped["_Description17"].Text = "Cannot find the actual game? Look up the username instead. @Lua_Fish"
-Pooped["_Description17"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description17"].TextScaled = true
-Pooped["_Description17"].TextSize = 14
-Pooped["_Description17"].TextWrapped = true
-Pooped["_Description17"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description17"].BackgroundTransparency = 1
-Pooped["_Description17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description17"].BorderSizePixel = 0
-Pooped["_Description17"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description17"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description17"].ZIndex = 2
-Pooped["_Description17"].Name = "Description"
-Pooped["_Description17"].Parent = Pooped["_UnnamedShooter"]
-
-Pooped["_MurderersVSSheriffsDuels"].Font = Enum.Font.SourceSans
-Pooped["_MurderersVSSheriffsDuels"].Text = ""
-Pooped["_MurderersVSSheriffsDuels"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_MurderersVSSheriffsDuels"].TextSize = 14
-Pooped["_MurderersVSSheriffsDuels"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
-Pooped["_MurderersVSSheriffsDuels"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_MurderersVSSheriffsDuels"].BorderSizePixel = 0
-Pooped["_MurderersVSSheriffsDuels"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_MurderersVSSheriffsDuels"].ZIndex = 2
-Pooped["_MurderersVSSheriffsDuels"].Name = "MurderersVSSheriffsDuels"
-Pooped["_MurderersVSSheriffsDuels"].Parent = Pooped["_Games"]
-
-Pooped["_Title19"].Font = Enum.Font.SourceSansBold
-Pooped["_Title19"].Text = "Murderers VS Sheriffs Duels"
-Pooped["_Title19"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title19"].TextScaled = true
-Pooped["_Title19"].TextSize = 14
-Pooped["_Title19"].TextWrapped = true
-Pooped["_Title19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title19"].BackgroundTransparency = 1
-Pooped["_Title19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title19"].BorderSizePixel = 0
-Pooped["_Title19"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title19"].ZIndex = 2
-Pooped["_Title19"].Name = "Title"
-Pooped["_Title19"].Parent = Pooped["_MurderersVSSheriffsDuels"]
-
-Pooped["_UIStroke22"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke22"].Thickness = 2
-Pooped["_UIStroke22"].Parent = Pooped["_MurderersVSSheriffsDuels"]
-
-Pooped["_Description18"].Font = Enum.Font.SourceSans
-Pooped["_Description18"].Text = "Cannot find the actual game? Look up the username instead. @Red21_Games"
-Pooped["_Description18"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description18"].TextScaled = true
-Pooped["_Description18"].TextSize = 14
-Pooped["_Description18"].TextWrapped = true
-Pooped["_Description18"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description18"].BackgroundTransparency = 1
-Pooped["_Description18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description18"].BorderSizePixel = 0
-Pooped["_Description18"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description18"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description18"].ZIndex = 2
-Pooped["_Description18"].Name = "Description"
-Pooped["_Description18"].Parent = Pooped["_MurderersVSSheriffsDuels"]
-
-Pooped["_ImpossibleGlassBridgeOBby"].Font = Enum.Font.SourceSans
-Pooped["_ImpossibleGlassBridgeOBby"].Text = ""
-Pooped["_ImpossibleGlassBridgeOBby"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ImpossibleGlassBridgeOBby"].TextSize = 14
-Pooped["_ImpossibleGlassBridgeOBby"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
-Pooped["_ImpossibleGlassBridgeOBby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ImpossibleGlassBridgeOBby"].BorderSizePixel = 0
-Pooped["_ImpossibleGlassBridgeOBby"].Size = UDim2.new(1, -20, 0, 50)
-Pooped["_ImpossibleGlassBridgeOBby"].ZIndex = 2
-Pooped["_ImpossibleGlassBridgeOBby"].Name = "ImpossibleGlassBridgeOBby"
-Pooped["_ImpossibleGlassBridgeOBby"].Parent = Pooped["_Games"]
-
-Pooped["_Title20"].Font = Enum.Font.SourceSansBold
-Pooped["_Title20"].Text = "Impossible Glass Bridge Obby! (Squid Game)"
-Pooped["_Title20"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title20"].TextScaled = true
-Pooped["_Title20"].TextSize = 14
-Pooped["_Title20"].TextWrapped = true
-Pooped["_Title20"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Title20"].BackgroundTransparency = 1
-Pooped["_Title20"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Title20"].BorderSizePixel = 0
-Pooped["_Title20"].Size = UDim2.new(1, 0, 0.5, -10)
-Pooped["_Title20"].ZIndex = 2
-Pooped["_Title20"].Name = "Title"
-Pooped["_Title20"].Parent = Pooped["_ImpossibleGlassBridgeOBby"]
-
-Pooped["_UIStroke23"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke23"].Thickness = 2
-Pooped["_UIStroke23"].Parent = Pooped["_ImpossibleGlassBridgeOBby"]
-
-Pooped["_Description19"].Font = Enum.Font.SourceSans
-Pooped["_Description19"].Text = "Cannot find the actual game? Look up the username instead. @isCreator"
-Pooped["_Description19"].TextColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description19"].TextScaled = true
-Pooped["_Description19"].TextSize = 14
-Pooped["_Description19"].TextWrapped = true
-Pooped["_Description19"].AnchorPoint = Vector2.new(0, 1)
-Pooped["_Description19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Description19"].BackgroundTransparency = 1
-Pooped["_Description19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Description19"].BorderSizePixel = 0
-Pooped["_Description19"].Position = UDim2.new(0, 0, 1, 0)
-Pooped["_Description19"].Size = UDim2.new(1, 0, 0.5, 10)
-Pooped["_Description19"].ZIndex = 2
-Pooped["_Description19"].Name = "Description"
-Pooped["_Description19"].Parent = Pooped["_ImpossibleGlassBridgeOBby"]
-
-Pooped["_TABCredits"].Text = "Credits"
-Pooped["_TABCredits"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
-Pooped["_TABCredits"].TextStrokeTransparency = 0
-Pooped["_TABCredits"].TextWrapped = true
-Pooped["_TABCredits"].Active = false
-Pooped["_TABCredits"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
-Pooped["_TABCredits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_TABCredits"].BorderSizePixel = 0
-Pooped["_TABCredits"].Position = UDim2.new(0, 111, 0, 24)
-Pooped["_TABCredits"].Selectable = false
-Pooped["_TABCredits"].Size = UDim2.new(0, 46, 0, 24)
-Pooped["_TABCredits"].Name = "TABCredits"
-Pooped["_TABCredits"].Parent = Pooped["_Frame"]
-
-Pooped["_Credits"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Credits"].BackgroundTransparency = 1
-Pooped["_Credits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Credits"].BorderSizePixel = 0
-Pooped["_Credits"].Position = UDim2.new(0, 0, 0, 48)
-Pooped["_Credits"].Size = UDim2.new(1, 0, 1, -58)
-Pooped["_Credits"].Visible = false
-Pooped["_Credits"].Name = "Credits"
-Pooped["_Credits"].Parent = Pooped["_Frame"]
-
-Pooped["_ImageLabel"].Image = "rbxassetid://10542441997"
-Pooped["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_ImageLabel"].BorderSizePixel = 0
-Pooped["_ImageLabel"].Position = UDim2.new(0.5, 0, 0.5, -25)
-Pooped["_ImageLabel"].Size = UDim2.new(0, 130, 0, 110)
-Pooped["_ImageLabel"].Parent = Pooped["_Credits"]
-
-Pooped["_UIStroke24"].Color = Color3.fromRGB(255, 255, 255)
-Pooped["_UIStroke24"].Thickness = 5
-Pooped["_UIStroke24"].Parent = Pooped["_ImageLabel"]
-
-Pooped["_Name"].Font = Enum.Font.SourceSans
-Pooped["_Name"].Text = "Krypstuen"
-Pooped["_Name"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Name"].TextSize = 20
-Pooped["_Name"].TextStrokeTransparency = 0
-Pooped["_Name"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_Name"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Name"].BackgroundTransparency = 1
-Pooped["_Name"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Name"].BorderSizePixel = 0
-Pooped["_Name"].Position = UDim2.new(0.5, 0, 0.5, 45)
-Pooped["_Name"].Size = UDim2.new(0, 82, 0, 20)
-Pooped["_Name"].Name = "Name"
-Pooped["_Name"].Parent = Pooped["_Credits"]
-
-Pooped["_Job"].Font = Enum.Font.SourceSans
-Pooped["_Job"].Text = "Loves to eat but not getting fat still."
-Pooped["_Job"].TextColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Job"].TextSize = 20
-Pooped["_Job"].TextStrokeTransparency = 0
-Pooped["_Job"].AnchorPoint = Vector2.new(0.5, 0.5)
-Pooped["_Job"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pooped["_Job"].BackgroundTransparency = 1
-Pooped["_Job"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_Job"].BorderSizePixel = 0
-Pooped["_Job"].Position = UDim2.new(0.5, 0, 0.5, 65)
-Pooped["_Job"].Size = UDim2.new(0, 253, 0, 20)
-Pooped["_Job"].Name = "Job"
-Pooped["_Job"].Parent = Pooped["_Credits"]
-
-Pooped["_WhenGUIDestroying"].SoundId = "rbxassetid://105341164545700"
-Pooped["_WhenGUIDestroying"].Volume = 0.25
-Pooped["_WhenGUIDestroying"].Name = "WhenGUIDestroying"
-Pooped["_WhenGUIDestroying"].Parent = Pooped["_PoopHub"]
-
-Pooped["_HoveringClose"].SoundId = "rbxassetid://6655787968"
-Pooped["_HoveringClose"].Name = "HoveringClose"
-Pooped["_HoveringClose"].Parent = Pooped["_PoopHub"]
-
-Pooped["_RestoreUp"].Image = "rbxassetid://886270278"
-Pooped["_RestoreUp"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
-Pooped["_RestoreUp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
-Pooped["_RestoreUp"].BorderSizePixel = 0
-Pooped["_RestoreUp"].Position = UDim2.new(0, 21, 0, 72)
-Pooped["_RestoreUp"].Size = UDim2.new(0, 32, 0, 32)
-Pooped["_RestoreUp"].Visible = false
-Pooped["_RestoreUp"].Name = "RestoreUp"
-Pooped["_RestoreUp"].Parent = Pooped["_PoopHub"]
-
-Pooped["_UIStroke25"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-Pooped["_UIStroke25"].Thickness = 2
-Pooped["_UIStroke25"].Parent = Pooped["_RestoreUp"]
-
-Pooped["_hovers"].SoundId = "rbxassetid://101834244987082"
-Pooped["_hovers"].Name = "hovers"
-Pooped["_hovers"].Parent = Pooped["_PoopHub"]
-
-Pooped["_clicking"].SoundId = "rbxassetid://683394607"
-Pooped["_clicking"].Name = "clicking"
-Pooped["_clicking"].Parent = Pooped["_PoopHub"]
-
-Pooped["_IsLoaded"].Name = "IsLoaded"
-Pooped["_IsLoaded"].Parent = Pooped["_PoopHub"]
-
-Pooped["_IsDestroyed"].Name = "IsDestroyed"
-Pooped["_IsDestroyed"].Parent = Pooped["_PoopHub"]
-
-Pooped["_PoopHub"].Parent = game.CoreGui
+Poop["_PoopHub"].IgnoreGuiInset = true
+Poop["_PoopHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Poop["_PoopHub"].Name = "PoopHub"
+
+Poop["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_Frame"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
+Poop["_Frame"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Frame"].BorderSizePixel = 0
+Poop["_Frame"].Position = UDim2.new(0.5, 0, -0.25, 0)
+Poop["_Frame"].Size = UDim2.new(0, 400, 0, 250)
+Poop["_Frame"].Parent = Poop["_PoopHub"]
+
+Poop["_UICorner"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner"].Parent = Poop["_Frame"]
+
+Poop["_DropShadowHolder"].BackgroundTransparency = 1
+Poop["_DropShadowHolder"].BorderSizePixel = 0
+Poop["_DropShadowHolder"].Size = UDim2.new(1, 0, 1, 0)
+Poop["_DropShadowHolder"].ZIndex = 0
+Poop["_DropShadowHolder"].Name = "DropShadowHolder"
+Poop["_DropShadowHolder"].Parent = Poop["_Frame"]
+
+Poop["_DropShadow"].Image = "rbxassetid://6014261993"
+Poop["_DropShadow"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_DropShadow"].ImageTransparency = 0.5
+Poop["_DropShadow"].ScaleType = Enum.ScaleType.Slice
+Poop["_DropShadow"].SliceCenter = Rect.new(49, 49, 450, 450)
+Poop["_DropShadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_DropShadow"].BackgroundTransparency = 1
+Poop["_DropShadow"].BorderSizePixel = 0
+Poop["_DropShadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Poop["_DropShadow"].Size = UDim2.new(1, 47, 1, 47)
+Poop["_DropShadow"].ZIndex = 0
+Poop["_DropShadow"].Name = "DropShadow"
+Poop["_DropShadow"].Parent = Poop["_DropShadowHolder"]
+
+Poop["_Header"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
+Poop["_Header"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Header"].BorderSizePixel = 0
+Poop["_Header"].Size = UDim2.new(1, 0, 0, 24)
+Poop["_Header"].Name = "Header"
+Poop["_Header"].Parent = Poop["_Frame"]
+
+Poop["_UICorner1"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner1"].Parent = Poop["_Header"]
+
+Poop["_Extension"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Extension"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
+Poop["_Extension"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Extension"].BorderSizePixel = 0
+Poop["_Extension"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Extension"].Size = UDim2.new(1, 0, 1, -12)
+Poop["_Extension"].Name = "Extension"
+Poop["_Extension"].Parent = Poop["_Header"]
+
+Poop["_Icon"].Image = "rbxassetid://886270278"
+Poop["_Icon"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Icon"].BackgroundTransparency = 1
+Poop["_Icon"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Icon"].BorderSizePixel = 0
+Poop["_Icon"].Size = UDim2.new(0, 24, 1, 0)
+Poop["_Icon"].Name = "Icon"
+Poop["_Icon"].Parent = Poop["_Header"]
+
+Poop["_UICorner2"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner2"].Parent = Poop["_Icon"]
+
+Poop["_Title"].Font = Enum.Font.SourceSans
+Poop["_Title"].Text = "Stay humble, eh. – Poop Hub"
+Poop["_Title"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
+Poop["_Title"].TextScaled = true
+Poop["_Title"].TextSize = 20
+Poop["_Title"].TextStrokeTransparency = 0
+Poop["_Title"].TextWrapped = true
+Poop["_Title"].TextXAlignment = Enum.TextXAlignment.Left
+Poop["_Title"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title"].BackgroundTransparency = 1
+Poop["_Title"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title"].BorderSizePixel = 0
+Poop["_Title"].Position = UDim2.new(0, 24, 0, 0)
+Poop["_Title"].Size = UDim2.new(0.5, -24, 1, 0)
+Poop["_Title"].Name = "Title"
+Poop["_Title"].Parent = Poop["_Header"]
+
+Poop["_UIPadding"].PaddingLeft = UDim.new(0, 4)
+Poop["_UIPadding"].Parent = Poop["_Title"]
+
+Poop["_UITextSizeConstraint"].MaxTextSize = 20
+Poop["_UITextSizeConstraint"].Parent = Poop["_Title"]
+
+Poop["_Close"].Font = Enum.Font.SourceSans
+Poop["_Close"].Text = "X"
+Poop["_Close"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Close"].TextScaled = true
+Poop["_Close"].TextSize = 14
+Poop["_Close"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Poop["_Close"].TextWrapped = true
+Poop["_Close"].AnchorPoint = Vector2.new(1, 0)
+Poop["_Close"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Close"].BackgroundTransparency = 1
+Poop["_Close"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Close"].BorderSizePixel = 0
+Poop["_Close"].Position = UDim2.new(1, 0, 0, 0)
+Poop["_Close"].Size = UDim2.new(0, 24, 1, 0)
+Poop["_Close"].Name = "Close"
+Poop["_Close"].Parent = Poop["_Header"]
+
+Poop["_Minimise"].Font = Enum.Font.SourceSans
+Poop["_Minimise"].Text = "–"
+Poop["_Minimise"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Minimise"].TextScaled = true
+Poop["_Minimise"].TextSize = 14
+Poop["_Minimise"].TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Poop["_Minimise"].TextWrapped = true
+Poop["_Minimise"].AnchorPoint = Vector2.new(1, 0)
+Poop["_Minimise"].BackgroundColor3 = Color3.fromRGB(37.00000159442425, 37.00000159442425, 37.00000159442425)
+Poop["_Minimise"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Minimise"].BorderSizePixel = 0
+Poop["_Minimise"].Position = UDim2.new(1, -24, 0, 0)
+Poop["_Minimise"].Size = UDim2.new(0, 24, 1, 0)
+Poop["_Minimise"].Name = "Minimise"
+Poop["_Minimise"].Parent = Poop["_Header"]
+
+Poop["_JoinWhatsAppGroup"].Font = Enum.Font.SourceSans
+Poop["_JoinWhatsAppGroup"].Text = "Join WhatsApp"
+Poop["_JoinWhatsAppGroup"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_JoinWhatsAppGroup"].TextScaled = true
+Poop["_JoinWhatsAppGroup"].TextSize = 14
+Poop["_JoinWhatsAppGroup"].TextWrapped = true
+Poop["_JoinWhatsAppGroup"].AnchorPoint = Vector2.new(1, 0)
+Poop["_JoinWhatsAppGroup"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_JoinWhatsAppGroup"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_JoinWhatsAppGroup"].BorderSizePixel = 0
+Poop["_JoinWhatsAppGroup"].Position = UDim2.new(1, -49, 0, 3)
+Poop["_JoinWhatsAppGroup"].Size = UDim2.new(0.5, -100, 1, -6)
+Poop["_JoinWhatsAppGroup"].Name = "JoinWhatsAppGroup"
+Poop["_JoinWhatsAppGroup"].Parent = Poop["_Header"]
+
+Poop["_UICorner3"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner3"].Parent = Poop["_JoinWhatsAppGroup"]
+
+Poop["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke"].Parent = Poop["_JoinWhatsAppGroup"]
+
+Poop["_UITextSizeConstraint1"].MaxTextSize = 14
+Poop["_UITextSizeConstraint1"].Parent = Poop["_JoinWhatsAppGroup"]
+
+Poop["_PromptClose"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_PromptClose"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Poop["_PromptClose"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_PromptClose"].BorderSizePixel = 0
+Poop["_PromptClose"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Poop["_PromptClose"].Size = UDim2.new(0, 300, 0, 150)
+Poop["_PromptClose"].Visible = false
+Poop["_PromptClose"].ZIndex = 3
+Poop["_PromptClose"].Name = "PromptClose"
+Poop["_PromptClose"].Parent = Poop["_Frame"]
+
+Poop["_UICorner4"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner4"].Parent = Poop["_PromptClose"]
+
+Poop["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke1"].Parent = Poop["_PromptClose"]
+
+Poop["_StoryOfPoopTheHub"].Font = Enum.Font.SourceSans
+Poop["_StoryOfPoopTheHub"].Text = "I know I am a poop. I was made in a toilet, dumped into a sewer, and then a mysterious guy took me and inserted me into a plastic bag. He took me to his room and started making humiliating projects on me. And now I have turned into some kind of user interface. What the fu**... The thing I will never forget is his name: Creepstu. Are you really, really sure you want to close this hub? Are you doing this on purpose?"
+Poop["_StoryOfPoopTheHub"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_StoryOfPoopTheHub"].TextScaled = true
+Poop["_StoryOfPoopTheHub"].TextSize = 14
+Poop["_StoryOfPoopTheHub"].TextStrokeTransparency = 0
+Poop["_StoryOfPoopTheHub"].TextWrapped = true
+Poop["_StoryOfPoopTheHub"].TextYAlignment = Enum.TextYAlignment.Top
+Poop["_StoryOfPoopTheHub"].AnchorPoint = Vector2.new(0.5, 0)
+Poop["_StoryOfPoopTheHub"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_StoryOfPoopTheHub"].BackgroundTransparency = 1
+Poop["_StoryOfPoopTheHub"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_StoryOfPoopTheHub"].BorderSizePixel = 0
+Poop["_StoryOfPoopTheHub"].Position = UDim2.new(0.5, 0, 0, 0)
+Poop["_StoryOfPoopTheHub"].Size = UDim2.new(1, -8, 0, 120)
+Poop["_StoryOfPoopTheHub"].ZIndex = 3
+Poop["_StoryOfPoopTheHub"].Name = "StoryOfPoopTheHub"
+Poop["_StoryOfPoopTheHub"].Parent = Poop["_PromptClose"]
+
+Poop["_UIPadding1"].PaddingTop = UDim.new(0, 4)
+Poop["_UIPadding1"].Parent = Poop["_StoryOfPoopTheHub"]
+
+Poop["_UITextSizeConstraint2"].MaxTextSize = 14
+Poop["_UITextSizeConstraint2"].Parent = Poop["_StoryOfPoopTheHub"]
+
+Poop["_SureToClose"].Font = Enum.Font.SourceSans
+Poop["_SureToClose"].Text = "Destroy"
+Poop["_SureToClose"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_SureToClose"].TextScaled = true
+Poop["_SureToClose"].TextSize = 26
+Poop["_SureToClose"].TextWrapped = true
+Poop["_SureToClose"].AnchorPoint = Vector2.new(1, 1)
+Poop["_SureToClose"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_SureToClose"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_SureToClose"].BorderSizePixel = 0
+Poop["_SureToClose"].Position = UDim2.new(1, -4, 1, -4)
+Poop["_SureToClose"].Size = UDim2.new(0, 144, 0, 26)
+Poop["_SureToClose"].ZIndex = 3
+Poop["_SureToClose"].Name = "SureToClose"
+Poop["_SureToClose"].Parent = Poop["_PromptClose"]
+
+Poop["_UICorner5"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner5"].Parent = Poop["_SureToClose"]
+
+Poop["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke2"].Parent = Poop["_SureToClose"]
+
+Poop["_UITextSizeConstraint3"].MaxTextSize = 26
+Poop["_UITextSizeConstraint3"].Parent = Poop["_SureToClose"]
+
+Poop["_Cancel"].Font = Enum.Font.SourceSans
+Poop["_Cancel"].Text = "Cancel"
+Poop["_Cancel"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Cancel"].TextScaled = true
+Poop["_Cancel"].TextSize = 26
+Poop["_Cancel"].TextWrapped = true
+Poop["_Cancel"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Cancel"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Cancel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Cancel"].BorderSizePixel = 0
+Poop["_Cancel"].Position = UDim2.new(0, 4, 1, -4)
+Poop["_Cancel"].Size = UDim2.new(0, 144, 0, 26)
+Poop["_Cancel"].ZIndex = 3
+Poop["_Cancel"].Name = "Cancel"
+Poop["_Cancel"].Parent = Poop["_PromptClose"]
+
+Poop["_UICorner6"].CornerRadius = UDim.new(0, 10)
+Poop["_UICorner6"].Parent = Poop["_Cancel"]
+
+Poop["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke3"].Parent = Poop["_Cancel"]
+
+Poop["_UITextSizeConstraint4"].MaxTextSize = 26
+Poop["_UITextSizeConstraint4"].Parent = Poop["_Cancel"]
+
+Poop["_TABUniversals"].Text = "Universals"
+Poop["_TABUniversals"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
+Poop["_TABUniversals"].TextStrokeTransparency = 0
+Poop["_TABUniversals"].TextWrapped = true
+Poop["_TABUniversals"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Poop["_TABUniversals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_TABUniversals"].BorderSizePixel = 0
+Poop["_TABUniversals"].Position = UDim2.new(0, 0, 0, 24)
+Poop["_TABUniversals"].Selectable = false
+Poop["_TABUniversals"].Size = UDim2.new(0, 64, 0, 24)
+Poop["_TABUniversals"].Name = "TABUniversals"
+Poop["_TABUniversals"].Parent = Poop["_Frame"]
+
+Poop["_TABGames"].Text = "Games"
+Poop["_TABGames"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
+Poop["_TABGames"].TextStrokeTransparency = 0
+Poop["_TABGames"].TextWrapped = true
+Poop["_TABGames"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Poop["_TABGames"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_TABGames"].BorderSizePixel = 0
+Poop["_TABGames"].Position = UDim2.new(0, 64, 0, 24)
+Poop["_TABGames"].Selectable = false
+Poop["_TABGames"].Size = UDim2.new(0, 47, 0, 24)
+Poop["_TABGames"].Name = "TABGames"
+Poop["_TABGames"].Parent = Poop["_Frame"]
+
+Poop["_NotLoadedYet"].Font = Enum.Font.SourceSans
+Poop["_NotLoadedYet"].Text = "Poop Hub is waiting for itself to load"
+Poop["_NotLoadedYet"].TextColor3 = Color3.fromRGB(178.00000458955765, 178.00000458955765, 178.00000458955765)
+Poop["_NotLoadedYet"].TextSize = 20
+Poop["_NotLoadedYet"].TextStrokeTransparency = 0
+Poop["_NotLoadedYet"].AnchorPoint = Vector2.new(0.5, 1)
+Poop["_NotLoadedYet"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_NotLoadedYet"].BackgroundTransparency = 1
+Poop["_NotLoadedYet"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_NotLoadedYet"].BorderSizePixel = 0
+Poop["_NotLoadedYet"].Position = UDim2.new(0.5, 0, 1, 0)
+Poop["_NotLoadedYet"].Size = UDim2.new(0, 260, 0, 20)
+Poop["_NotLoadedYet"].Visible = false
+Poop["_NotLoadedYet"].Name = "NotLoadedYet"
+Poop["_NotLoadedYet"].Parent = Poop["_Frame"]
+
+Poop["_Universals"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Poop["_Universals"].ScrollBarImageColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.00000131130219)
+Poop["_Universals"].ScrollBarThickness = 0
+Poop["_Universals"].ScrollingDirection = Enum.ScrollingDirection.Y
+Poop["_Universals"].BackgroundColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Poop["_Universals"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Universals"].BorderSizePixel = 0
+Poop["_Universals"].Position = UDim2.new(0, 0, 0, 48)
+Poop["_Universals"].Selectable = false
+Poop["_Universals"].Size = UDim2.new(1, 0, 1, -58)
+Poop["_Universals"].Visible = false
+Poop["_Universals"].ZIndex = 2
+Poop["_Universals"].Name = "Universals"
+Poop["_Universals"].Parent = Poop["_Frame"]
+
+Poop["_AimbotV3"].Font = Enum.Font.SourceSans
+Poop["_AimbotV3"].Text = ""
+Poop["_AimbotV3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_AimbotV3"].TextSize = 14
+Poop["_AimbotV3"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_AimbotV3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_AimbotV3"].BorderSizePixel = 0
+Poop["_AimbotV3"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_AimbotV3"].ZIndex = 2
+Poop["_AimbotV3"].Name = "AimbotV3"
+Poop["_AimbotV3"].Parent = Poop["_Universals"]
+
+Poop["_Title1"].Font = Enum.Font.SourceSansBold
+Poop["_Title1"].Text = "Aimbot V3"
+Poop["_Title1"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title1"].TextScaled = true
+Poop["_Title1"].TextSize = 14
+Poop["_Title1"].TextWrapped = true
+Poop["_Title1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title1"].BackgroundTransparency = 1
+Poop["_Title1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title1"].BorderSizePixel = 0
+Poop["_Title1"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title1"].ZIndex = 2
+Poop["_Title1"].Name = "Title"
+Poop["_Title1"].Parent = Poop["_AimbotV3"]
+
+Poop["_UIStroke4"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke4"].Thickness = 2
+Poop["_UIStroke4"].Parent = Poop["_AimbotV3"]
+
+Poop["_Description"].Font = Enum.Font.SourceSans
+Poop["_Description"].Text = "Project Bullshit, Racist Dolphin. You know that script or no? Locks aim to player heads."
+Poop["_Description"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description"].TextScaled = true
+Poop["_Description"].TextSize = 14
+Poop["_Description"].TextWrapped = true
+Poop["_Description"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description"].BackgroundTransparency = 1
+Poop["_Description"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description"].BorderSizePixel = 0
+Poop["_Description"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description"].ZIndex = 2
+Poop["_Description"].Name = "Description"
+Poop["_Description"].Parent = Poop["_AimbotV3"]
+
+Poop["_UIPadding2"].PaddingBottom = UDim.new(0, 10)
+Poop["_UIPadding2"].PaddingLeft = UDim.new(0, 10)
+Poop["_UIPadding2"].PaddingTop = UDim.new(0, 10)
+Poop["_UIPadding2"].Parent = Poop["_Universals"]
+
+Poop["_UIListLayout"].Padding = UDim.new(0, 10)
+Poop["_UIListLayout"].Parent = Poop["_Universals"]
+
+Poop["_Antilag"].Font = Enum.Font.SourceSans
+Poop["_Antilag"].Text = ""
+Poop["_Antilag"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Antilag"].TextSize = 14
+Poop["_Antilag"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Antilag"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Antilag"].BorderSizePixel = 0
+Poop["_Antilag"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_Antilag"].ZIndex = 2
+Poop["_Antilag"].Name = "Antilag"
+Poop["_Antilag"].Parent = Poop["_Universals"]
+
+Poop["_Title2"].Font = Enum.Font.SourceSansBold
+Poop["_Title2"].Text = "Antilag"
+Poop["_Title2"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title2"].TextScaled = true
+Poop["_Title2"].TextSize = 14
+Poop["_Title2"].TextWrapped = true
+Poop["_Title2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title2"].BackgroundTransparency = 1
+Poop["_Title2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title2"].BorderSizePixel = 0
+Poop["_Title2"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title2"].ZIndex = 2
+Poop["_Title2"].Name = "Title"
+Poop["_Title2"].Parent = Poop["_Antilag"]
+
+Poop["_Description1"].Font = Enum.Font.SourceSans
+Poop["_Description1"].Text = "Lowers game quality to boost FPS. After clicking it, you will likely get huge frame drops if your device is not high-end."
+Poop["_Description1"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description1"].TextScaled = true
+Poop["_Description1"].TextSize = 14
+Poop["_Description1"].TextWrapped = true
+Poop["_Description1"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description1"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description1"].BackgroundTransparency = 1
+Poop["_Description1"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description1"].BorderSizePixel = 0
+Poop["_Description1"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description1"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description1"].ZIndex = 2
+Poop["_Description1"].Name = "Description"
+Poop["_Description1"].Parent = Poop["_Antilag"]
+
+Poop["_UIStroke5"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke5"].Thickness = 2
+Poop["_UIStroke5"].Parent = Poop["_Antilag"]
+
+Poop["_BackdoorExecutor"].Font = Enum.Font.SourceSans
+Poop["_BackdoorExecutor"].Text = ""
+Poop["_BackdoorExecutor"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_BackdoorExecutor"].TextSize = 14
+Poop["_BackdoorExecutor"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_BackdoorExecutor"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_BackdoorExecutor"].BorderSizePixel = 0
+Poop["_BackdoorExecutor"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_BackdoorExecutor"].ZIndex = 2
+Poop["_BackdoorExecutor"].Name = "BackdoorExecutor"
+Poop["_BackdoorExecutor"].Parent = Poop["_Universals"]
+
+Poop["_Title3"].Font = Enum.Font.SourceSansBold
+Poop["_Title3"].Text = "Backdoor Executor"
+Poop["_Title3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title3"].TextScaled = true
+Poop["_Title3"].TextSize = 14
+Poop["_Title3"].TextWrapped = true
+Poop["_Title3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title3"].BackgroundTransparency = 1
+Poop["_Title3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title3"].BorderSizePixel = 0
+Poop["_Title3"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title3"].ZIndex = 2
+Poop["_Title3"].Name = "Title"
+Poop["_Title3"].Parent = Poop["_BackdoorExecutor"]
+
+Poop["_Description2"].Font = Enum.Font.SourceSans
+Poop["_Description2"].Text = "Made in 2021? By iK4oS on GitHub, this has been archived/discontinued until further notice. An in-game interface/tool to scan every remote for backdoors."
+Poop["_Description2"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description2"].TextScaled = true
+Poop["_Description2"].TextSize = 14
+Poop["_Description2"].TextWrapped = true
+Poop["_Description2"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description2"].BackgroundTransparency = 1
+Poop["_Description2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description2"].BorderSizePixel = 0
+Poop["_Description2"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description2"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description2"].ZIndex = 2
+Poop["_Description2"].Name = "Description"
+Poop["_Description2"].Parent = Poop["_BackdoorExecutor"]
+
+Poop["_UIStroke6"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke6"].Thickness = 2
+Poop["_UIStroke6"].Parent = Poop["_BackdoorExecutor"]
+
+Poop["_CMDX"].Font = Enum.Font.SourceSans
+Poop["_CMDX"].Text = ""
+Poop["_CMDX"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_CMDX"].TextSize = 14
+Poop["_CMDX"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_CMDX"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_CMDX"].BorderSizePixel = 0
+Poop["_CMDX"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_CMDX"].ZIndex = 2
+Poop["_CMDX"].Name = "CMDX"
+Poop["_CMDX"].Parent = Poop["_Universals"]
+
+Poop["_Title4"].Font = Enum.Font.SourceSansBold
+Poop["_Title4"].Text = "CMD X"
+Poop["_Title4"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title4"].TextScaled = true
+Poop["_Title4"].TextSize = 14
+Poop["_Title4"].TextWrapped = true
+Poop["_Title4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title4"].BackgroundTransparency = 1
+Poop["_Title4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title4"].BorderSizePixel = 0
+Poop["_Title4"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title4"].ZIndex = 2
+Poop["_Title4"].Name = "Title"
+Poop["_Title4"].Parent = Poop["_CMDX"]
+
+Poop["_Description3"].Font = Enum.Font.SourceSans
+Poop["_Description3"].Text = "U – Open and close output... Right Shift – Fill suggestion... ; – Focus on command bar... Q – Open and close... Left Shift + Backspace – Clear command bar... .cmds – List commands."
+Poop["_Description3"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description3"].TextScaled = true
+Poop["_Description3"].TextSize = 14
+Poop["_Description3"].TextWrapped = true
+Poop["_Description3"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description3"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description3"].BackgroundTransparency = 1
+Poop["_Description3"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description3"].BorderSizePixel = 0
+Poop["_Description3"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description3"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description3"].ZIndex = 2
+Poop["_Description3"].Name = "Description"
+Poop["_Description3"].Parent = Poop["_CMDX"]
+
+Poop["_UIStroke7"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke7"].Thickness = 2
+Poop["_UIStroke7"].Parent = Poop["_CMDX"]
+
+Poop["_DexExplorerWRD"].Font = Enum.Font.SourceSans
+Poop["_DexExplorerWRD"].Text = ""
+Poop["_DexExplorerWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_DexExplorerWRD"].TextSize = 14
+Poop["_DexExplorerWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_DexExplorerWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_DexExplorerWRD"].BorderSizePixel = 0
+Poop["_DexExplorerWRD"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_DexExplorerWRD"].ZIndex = 2
+Poop["_DexExplorerWRD"].Name = "DexExplorerWRD"
+Poop["_DexExplorerWRD"].Parent = Poop["_Universals"]
+
+Poop["_Title5"].Font = Enum.Font.SourceSansBold
+Poop["_Title5"].Text = "Dex Explorer"
+Poop["_Title5"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title5"].TextScaled = true
+Poop["_Title5"].TextSize = 14
+Poop["_Title5"].TextWrapped = true
+Poop["_Title5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title5"].BackgroundTransparency = 1
+Poop["_Title5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title5"].BorderSizePixel = 0
+Poop["_Title5"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title5"].ZIndex = 2
+Poop["_Title5"].Name = "Title"
+Poop["_Title5"].Parent = Poop["_DexExplorerWRD"]
+
+Poop["_Description4"].Font = Enum.Font.SourceSans
+Poop["_Description4"].Text = "By Babyhamsta, a game explorer GUI. Shows every instance of the game and all their properties. Useful for developers."
+Poop["_Description4"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description4"].TextScaled = true
+Poop["_Description4"].TextSize = 14
+Poop["_Description4"].TextWrapped = true
+Poop["_Description4"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description4"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description4"].BackgroundTransparency = 1
+Poop["_Description4"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description4"].BorderSizePixel = 0
+Poop["_Description4"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description4"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description4"].ZIndex = 2
+Poop["_Description4"].Name = "Description"
+Poop["_Description4"].Parent = Poop["_DexExplorerWRD"]
+
+Poop["_UIStroke8"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke8"].Thickness = 2
+Poop["_UIStroke8"].Parent = Poop["_DexExplorerWRD"]
+
+Poop["_FrontFlipandBackFlipandAirjump"].Font = Enum.Font.SourceSans
+Poop["_FrontFlipandBackFlipandAirjump"].Text = ""
+Poop["_FrontFlipandBackFlipandAirjump"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_FrontFlipandBackFlipandAirjump"].TextSize = 14
+Poop["_FrontFlipandBackFlipandAirjump"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_FrontFlipandBackFlipandAirjump"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_FrontFlipandBackFlipandAirjump"].BorderSizePixel = 0
+Poop["_FrontFlipandBackFlipandAirjump"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_FrontFlipandBackFlipandAirjump"].ZIndex = 2
+Poop["_FrontFlipandBackFlipandAirjump"].Name = "FrontFlipandBackFlipandAirjump"
+Poop["_FrontFlipandBackFlipandAirjump"].Parent = Poop["_Universals"]
+
+Poop["_Title6"].Font = Enum.Font.SourceSansBold
+Poop["_Title6"].Text = "Front Flip and Back Flip and Air Jump"
+Poop["_Title6"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title6"].TextScaled = true
+Poop["_Title6"].TextSize = 14
+Poop["_Title6"].TextWrapped = true
+Poop["_Title6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title6"].BackgroundTransparency = 1
+Poop["_Title6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title6"].BorderSizePixel = 0
+Poop["_Title6"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title6"].ZIndex = 2
+Poop["_Title6"].Name = "Title"
+Poop["_Title6"].Parent = Poop["_FrontFlipandBackFlipandAirjump"]
+
+Poop["_Description5"].Font = Enum.Font.SourceSans
+Poop["_Description5"].Text = "FE, players can see you doing it so relax, it is not client-sided. This script is about parkour movements? Z – Front Flip... X – Back Flip... C – Air Jump."
+Poop["_Description5"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description5"].TextScaled = true
+Poop["_Description5"].TextSize = 14
+Poop["_Description5"].TextWrapped = true
+Poop["_Description5"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description5"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description5"].BackgroundTransparency = 1
+Poop["_Description5"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description5"].BorderSizePixel = 0
+Poop["_Description5"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description5"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description5"].ZIndex = 2
+Poop["_Description5"].Name = "Description"
+Poop["_Description5"].Parent = Poop["_FrontFlipandBackFlipandAirjump"]
+
+Poop["_UIStroke9"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke9"].Thickness = 2
+Poop["_UIStroke9"].Parent = Poop["_FrontFlipandBackFlipandAirjump"]
+
+Poop["_ToolAssistedSpeedrun"].Font = Enum.Font.SourceSans
+Poop["_ToolAssistedSpeedrun"].Text = ""
+Poop["_ToolAssistedSpeedrun"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ToolAssistedSpeedrun"].TextSize = 14
+Poop["_ToolAssistedSpeedrun"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_ToolAssistedSpeedrun"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ToolAssistedSpeedrun"].BorderSizePixel = 0
+Poop["_ToolAssistedSpeedrun"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_ToolAssistedSpeedrun"].ZIndex = 2
+Poop["_ToolAssistedSpeedrun"].Name = "ToolAssistedSpeedrun"
+Poop["_ToolAssistedSpeedrun"].Parent = Poop["_Universals"]
+
+Poop["_Title7"].Font = Enum.Font.SourceSansBold
+Poop["_Title7"].Text = "Tool Assisted Speedrun"
+Poop["_Title7"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title7"].TextScaled = true
+Poop["_Title7"].TextSize = 14
+Poop["_Title7"].TextWrapped = true
+Poop["_Title7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title7"].BackgroundTransparency = 1
+Poop["_Title7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title7"].BorderSizePixel = 0
+Poop["_Title7"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title7"].ZIndex = 2
+Poop["_Title7"].Name = "Title"
+Poop["_Title7"].Parent = Poop["_ToolAssistedSpeedrun"]
+
+Poop["_Description6"].Font = Enum.Font.SourceSans
+Poop["_Description6"].Text = "By Tomato. Hahaha, why is the creator's name Tomato? Do you know the flashback script that is popular on mobile? This is for PC, use keybinds if needed."
+Poop["_Description6"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description6"].TextScaled = true
+Poop["_Description6"].TextSize = 14
+Poop["_Description6"].TextWrapped = true
+Poop["_Description6"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description6"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description6"].BackgroundTransparency = 1
+Poop["_Description6"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description6"].BorderSizePixel = 0
+Poop["_Description6"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description6"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description6"].ZIndex = 2
+Poop["_Description6"].Name = "Description"
+Poop["_Description6"].Parent = Poop["_ToolAssistedSpeedrun"]
+
+Poop["_UIStroke10"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke10"].Thickness = 2
+Poop["_UIStroke10"].Parent = Poop["_ToolAssistedSpeedrun"]
+
+Poop["_Hydroxide"].Font = Enum.Font.SourceSans
+Poop["_Hydroxide"].Text = ""
+Poop["_Hydroxide"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Hydroxide"].TextSize = 14
+Poop["_Hydroxide"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Hydroxide"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Hydroxide"].BorderSizePixel = 0
+Poop["_Hydroxide"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_Hydroxide"].ZIndex = 2
+Poop["_Hydroxide"].Name = "Hydroxide"
+Poop["_Hydroxide"].Parent = Poop["_Universals"]
+
+Poop["_Title8"].Font = Enum.Font.SourceSansBold
+Poop["_Title8"].Text = "Hydroxide"
+Poop["_Title8"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title8"].TextScaled = true
+Poop["_Title8"].TextSize = 14
+Poop["_Title8"].TextWrapped = true
+Poop["_Title8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title8"].BackgroundTransparency = 1
+Poop["_Title8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title8"].BorderSizePixel = 0
+Poop["_Title8"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title8"].ZIndex = 2
+Poop["_Title8"].Name = "Title"
+Poop["_Title8"].Parent = Poop["_Hydroxide"]
+
+Poop["_Description7"].Font = Enum.Font.SourceSans
+Poop["_Description7"].Text = "By Upbolt on GitHub, features in Hydroxide are upvalue scanner, constant scanner, script scanner, module scanner, RemoteSpy and ClosureSpy. Lua runtime introspection and network capturing tool for games on the Roblox engine."
+Poop["_Description7"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description7"].TextScaled = true
+Poop["_Description7"].TextSize = 14
+Poop["_Description7"].TextWrapped = true
+Poop["_Description7"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description7"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description7"].BackgroundTransparency = 1
+Poop["_Description7"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description7"].BorderSizePixel = 0
+Poop["_Description7"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description7"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description7"].ZIndex = 2
+Poop["_Description7"].Name = "Description"
+Poop["_Description7"].Parent = Poop["_Hydroxide"]
+
+Poop["_UIStroke11"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke11"].Thickness = 2
+Poop["_UIStroke11"].Parent = Poop["_Hydroxide"]
+
+Poop["_InfiniteYield"].Font = Enum.Font.SourceSans
+Poop["_InfiniteYield"].Text = ""
+Poop["_InfiniteYield"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_InfiniteYield"].TextSize = 14
+Poop["_InfiniteYield"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_InfiniteYield"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_InfiniteYield"].BorderSizePixel = 0
+Poop["_InfiniteYield"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_InfiniteYield"].ZIndex = 2
+Poop["_InfiniteYield"].Name = "InfiniteYield"
+Poop["_InfiniteYield"].Parent = Poop["_Universals"]
+
+Poop["_Title9"].Font = Enum.Font.SourceSansBold
+Poop["_Title9"].Text = "Infinite Yield"
+Poop["_Title9"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title9"].TextScaled = true
+Poop["_Title9"].TextSize = 14
+Poop["_Title9"].TextWrapped = true
+Poop["_Title9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title9"].BackgroundTransparency = 1
+Poop["_Title9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title9"].BorderSizePixel = 0
+Poop["_Title9"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title9"].ZIndex = 2
+Poop["_Title9"].Name = "Title"
+Poop["_Title9"].Parent = Poop["_InfiniteYield"]
+
+Poop["_Description8"].Font = Enum.Font.SourceSans
+Poop["_Description8"].Text = "By EdgeIY on GitHub, the best command line script for roblox. You can learn how to use all the features of this script in the wiki!"
+Poop["_Description8"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description8"].TextScaled = true
+Poop["_Description8"].TextSize = 14
+Poop["_Description8"].TextWrapped = true
+Poop["_Description8"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description8"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description8"].BackgroundTransparency = 1
+Poop["_Description8"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description8"].BorderSizePixel = 0
+Poop["_Description8"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description8"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description8"].ZIndex = 2
+Poop["_Description8"].Name = "Description"
+Poop["_Description8"].Parent = Poop["_InfiniteYield"]
+
+Poop["_UIStroke12"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke12"].Thickness = 2
+Poop["_UIStroke12"].Parent = Poop["_InfiniteYield"]
+
+Poop["_Orca"].Font = Enum.Font.SourceSans
+Poop["_Orca"].Text = ""
+Poop["_Orca"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Orca"].TextSize = 14
+Poop["_Orca"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Orca"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Orca"].BorderSizePixel = 0
+Poop["_Orca"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_Orca"].ZIndex = 2
+Poop["_Orca"].Name = "Orca"
+Poop["_Orca"].Parent = Poop["_Universals"]
+
+Poop["_Title10"].Font = Enum.Font.SourceSansBold
+Poop["_Title10"].Text = "Orca"
+Poop["_Title10"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title10"].TextScaled = true
+Poop["_Title10"].TextSize = 14
+Poop["_Title10"].TextWrapped = true
+Poop["_Title10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title10"].BackgroundTransparency = 1
+Poop["_Title10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title10"].BorderSizePixel = 0
+Poop["_Title10"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title10"].ZIndex = 2
+Poop["_Title10"].Name = "Title"
+Poop["_Title10"].Parent = Poop["_Orca"]
+
+Poop["_Description9"].Font = Enum.Font.SourceSans
+Poop["_Description9"].Text = "By richie0866 on GitHub, general-purpose Roblox script hub designed to make convenient tasks easy and satisfying. Press K to open or close Orca. For the best experience, a 1080p monitor or above is recommended!"
+Poop["_Description9"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description9"].TextScaled = true
+Poop["_Description9"].TextSize = 14
+Poop["_Description9"].TextWrapped = true
+Poop["_Description9"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description9"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description9"].BackgroundTransparency = 1
+Poop["_Description9"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description9"].BorderSizePixel = 0
+Poop["_Description9"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description9"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description9"].ZIndex = 2
+Poop["_Description9"].Name = "Description"
+Poop["_Description9"].Parent = Poop["_Orca"]
+
+Poop["_UIStroke13"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke13"].Thickness = 2
+Poop["_UIStroke13"].Parent = Poop["_Orca"]
+
+Poop["_Owl"].Font = Enum.Font.SourceSans
+Poop["_Owl"].Text = ""
+Poop["_Owl"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Owl"].TextSize = 14
+Poop["_Owl"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Owl"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Owl"].BorderSizePixel = 0
+Poop["_Owl"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_Owl"].ZIndex = 2
+Poop["_Owl"].Name = "Owl"
+Poop["_Owl"].Parent = Poop["_Universals"]
+
+Poop["_Title11"].Font = Enum.Font.SourceSansBold
+Poop["_Title11"].Text = "Owl"
+Poop["_Title11"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title11"].TextScaled = true
+Poop["_Title11"].TextSize = 14
+Poop["_Title11"].TextWrapped = true
+Poop["_Title11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title11"].BackgroundTransparency = 1
+Poop["_Title11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title11"].BorderSizePixel = 0
+Poop["_Title11"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title11"].ZIndex = 2
+Poop["_Title11"].Name = "Title"
+Poop["_Title11"].Parent = Poop["_Owl"]
+
+Poop["_Description10"].Font = Enum.Font.SourceSans
+Poop["_Description10"].Text = "By CriShoux on GitHub, is it still working? This script involves an aimbot, among other features like extra-sensory perception (ESP), and what more?"
+Poop["_Description10"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description10"].TextScaled = true
+Poop["_Description10"].TextSize = 14
+Poop["_Description10"].TextWrapped = true
+Poop["_Description10"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description10"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description10"].BackgroundTransparency = 1
+Poop["_Description10"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description10"].BorderSizePixel = 0
+Poop["_Description10"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description10"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description10"].ZIndex = 2
+Poop["_Description10"].Name = "Description"
+Poop["_Description10"].Parent = Poop["_Owl"]
+
+Poop["_UIStroke14"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke14"].Thickness = 2
+Poop["_UIStroke14"].Parent = Poop["_Owl"]
+
+Poop["_SecureDarkDex"].Font = Enum.Font.SourceSans
+Poop["_SecureDarkDex"].Text = ""
+Poop["_SecureDarkDex"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_SecureDarkDex"].TextSize = 14
+Poop["_SecureDarkDex"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_SecureDarkDex"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_SecureDarkDex"].BorderSizePixel = 0
+Poop["_SecureDarkDex"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_SecureDarkDex"].ZIndex = 2
+Poop["_SecureDarkDex"].Name = "SecureDarkDex"
+Poop["_SecureDarkDex"].Parent = Poop["_Universals"]
+
+Poop["_Title12"].Font = Enum.Font.SourceSansBold
+Poop["_Title12"].Text = "Secure Dark Dex"
+Poop["_Title12"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title12"].TextScaled = true
+Poop["_Title12"].TextSize = 14
+Poop["_Title12"].TextWrapped = true
+Poop["_Title12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title12"].BackgroundTransparency = 1
+Poop["_Title12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title12"].BorderSizePixel = 0
+Poop["_Title12"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title12"].ZIndex = 2
+Poop["_Title12"].Name = "Title"
+Poop["_Title12"].Parent = Poop["_SecureDarkDex"]
+
+Poop["_Description11"].Font = Enum.Font.SourceSans
+Poop["_Description11"].Text = "By Babyhamsta on GitHub, what is this? It is like Dex Explorer but in a secured version."
+Poop["_Description11"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description11"].TextScaled = true
+Poop["_Description11"].TextSize = 14
+Poop["_Description11"].TextWrapped = true
+Poop["_Description11"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description11"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description11"].BackgroundTransparency = 1
+Poop["_Description11"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description11"].BorderSizePixel = 0
+Poop["_Description11"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description11"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description11"].ZIndex = 2
+Poop["_Description11"].Name = "Description"
+Poop["_Description11"].Parent = Poop["_SecureDarkDex"]
+
+Poop["_UIStroke15"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke15"].Thickness = 2
+Poop["_UIStroke15"].Parent = Poop["_SecureDarkDex"]
+
+Poop["_Space"].Font = Enum.Font.SourceSans
+Poop["_Space"].Text = ""
+Poop["_Space"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Space"].TextSize = 14
+Poop["_Space"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_Space"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Space"].BorderSizePixel = 0
+Poop["_Space"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_Space"].ZIndex = 2
+Poop["_Space"].Name = "Space"
+Poop["_Space"].Parent = Poop["_Universals"]
+
+Poop["_Title13"].Font = Enum.Font.SourceSansBold
+Poop["_Title13"].Text = "Space"
+Poop["_Title13"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title13"].TextScaled = true
+Poop["_Title13"].TextSize = 14
+Poop["_Title13"].TextWrapped = true
+Poop["_Title13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title13"].BackgroundTransparency = 1
+Poop["_Title13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title13"].BorderSizePixel = 0
+Poop["_Title13"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title13"].ZIndex = 2
+Poop["_Title13"].Name = "Title"
+Poop["_Title13"].Parent = Poop["_Space"]
+
+Poop["_Description12"].Font = Enum.Font.SourceSans
+Poop["_Description12"].Text = "By Lucasfin000 on GitHub, what is this? It is a Roblox script hub. I am not sure if it has been patched yet."
+Poop["_Description12"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description12"].TextScaled = true
+Poop["_Description12"].TextSize = 14
+Poop["_Description12"].TextWrapped = true
+Poop["_Description12"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description12"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description12"].BackgroundTransparency = 1
+Poop["_Description12"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description12"].BorderSizePixel = 0
+Poop["_Description12"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description12"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description12"].ZIndex = 2
+Poop["_Description12"].Name = "Description"
+Poop["_Description12"].Parent = Poop["_Space"]
+
+Poop["_UIStroke16"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke16"].Thickness = 2
+Poop["_UIStroke16"].Parent = Poop["_Space"]
+
+Poop["_UnnamedESP"].Font = Enum.Font.SourceSans
+Poop["_UnnamedESP"].Text = ""
+Poop["_UnnamedESP"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_UnnamedESP"].TextSize = 14
+Poop["_UnnamedESP"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_UnnamedESP"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_UnnamedESP"].BorderSizePixel = 0
+Poop["_UnnamedESP"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_UnnamedESP"].ZIndex = 2
+Poop["_UnnamedESP"].Name = "UnnamedESP"
+Poop["_UnnamedESP"].Parent = Poop["_Universals"]
+
+Poop["_Title14"].Font = Enum.Font.SourceSansBold
+Poop["_Title14"].Text = "Unnamed ESP"
+Poop["_Title14"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title14"].TextScaled = true
+Poop["_Title14"].TextSize = 14
+Poop["_Title14"].TextWrapped = true
+Poop["_Title14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title14"].BackgroundTransparency = 1
+Poop["_Title14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title14"].BorderSizePixel = 0
+Poop["_Title14"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title14"].ZIndex = 2
+Poop["_Title14"].Name = "Title"
+Poop["_Title14"].Parent = Poop["_UnnamedESP"]
+
+Poop["_Description13"].Font = Enum.Font.SourceSans
+Poop["_Description13"].Text = "By ic3w0lf22 on GitHub, this script was known in Synapse X, the paid executor. What is this? In my perspective, it is an overpowered ESP script."
+Poop["_Description13"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description13"].TextScaled = true
+Poop["_Description13"].TextSize = 14
+Poop["_Description13"].TextWrapped = true
+Poop["_Description13"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description13"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description13"].BackgroundTransparency = 1
+Poop["_Description13"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description13"].BorderSizePixel = 0
+Poop["_Description13"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description13"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description13"].ZIndex = 2
+Poop["_Description13"].Name = "Description"
+Poop["_Description13"].Parent = Poop["_UnnamedESP"]
+
+Poop["_UIStroke17"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke17"].Thickness = 2
+Poop["_UIStroke17"].Parent = Poop["_UnnamedESP"]
+
+Poop["_WalkOnWalls"].Font = Enum.Font.SourceSans
+Poop["_WalkOnWalls"].Text = ""
+Poop["_WalkOnWalls"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_WalkOnWalls"].TextSize = 14
+Poop["_WalkOnWalls"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_WalkOnWalls"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_WalkOnWalls"].BorderSizePixel = 0
+Poop["_WalkOnWalls"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_WalkOnWalls"].ZIndex = 2
+Poop["_WalkOnWalls"].Name = "WalkOnWalls"
+Poop["_WalkOnWalls"].Parent = Poop["_Universals"]
+
+Poop["_Title15"].Font = Enum.Font.SourceSansBold
+Poop["_Title15"].Text = "Walk on Walls"
+Poop["_Title15"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title15"].TextScaled = true
+Poop["_Title15"].TextSize = 14
+Poop["_Title15"].TextWrapped = true
+Poop["_Title15"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title15"].BackgroundTransparency = 1
+Poop["_Title15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title15"].BorderSizePixel = 0
+Poop["_Title15"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title15"].ZIndex = 2
+Poop["_Title15"].Name = "Title"
+Poop["_Title15"].Parent = Poop["_WalkOnWalls"]
+
+Poop["_Description14"].Font = Enum.Font.SourceSans
+Poop["_Description14"].Text = "Walk on walls. It may be buggy in certain games. This script is ancient, though."
+Poop["_Description14"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description14"].TextScaled = true
+Poop["_Description14"].TextSize = 14
+Poop["_Description14"].TextWrapped = true
+Poop["_Description14"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description14"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description14"].BackgroundTransparency = 1
+Poop["_Description14"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description14"].BorderSizePixel = 0
+Poop["_Description14"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description14"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description14"].ZIndex = 2
+Poop["_Description14"].Name = "Description"
+Poop["_Description14"].Parent = Poop["_WalkOnWalls"]
+
+Poop["_UIStroke18"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke18"].Thickness = 2
+Poop["_UIStroke18"].Parent = Poop["_WalkOnWalls"]
+
+Poop["_AimbotWRD"].Font = Enum.Font.SourceSans
+Poop["_AimbotWRD"].Text = ""
+Poop["_AimbotWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_AimbotWRD"].TextSize = 14
+Poop["_AimbotWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_AimbotWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_AimbotWRD"].BorderSizePixel = 0
+Poop["_AimbotWRD"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_AimbotWRD"].ZIndex = 2
+Poop["_AimbotWRD"].Name = "AimbotWRD"
+Poop["_AimbotWRD"].Parent = Poop["_Universals"]
+
+Poop["_Title16"].Font = Enum.Font.SourceSansBold
+Poop["_Title16"].Text = "Aimbot"
+Poop["_Title16"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title16"].TextScaled = true
+Poop["_Title16"].TextSize = 14
+Poop["_Title16"].TextWrapped = true
+Poop["_Title16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title16"].BackgroundTransparency = 1
+Poop["_Title16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title16"].BorderSizePixel = 0
+Poop["_Title16"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title16"].ZIndex = 2
+Poop["_Title16"].Name = "Title"
+Poop["_Title16"].Parent = Poop["_AimbotWRD"]
+
+Poop["_Description15"].Font = Enum.Font.SourceSans
+Poop["_Description15"].Text = "By WeAreDevs, the execution is totally complex. This script has configurations, but I set it to my recommendations: TeamCheck yes, AimbotBypass no, and WallCheck yes."
+Poop["_Description15"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description15"].TextScaled = true
+Poop["_Description15"].TextSize = 14
+Poop["_Description15"].TextWrapped = true
+Poop["_Description15"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description15"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description15"].BackgroundTransparency = 1
+Poop["_Description15"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description15"].BorderSizePixel = 0
+Poop["_Description15"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description15"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description15"].ZIndex = 2
+Poop["_Description15"].Name = "Description"
+Poop["_Description15"].Parent = Poop["_AimbotWRD"]
+
+Poop["_UIStroke19"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke19"].Thickness = 2
+Poop["_UIStroke19"].Parent = Poop["_AimbotWRD"]
+
+Poop["_ESPWRD"].Font = Enum.Font.SourceSans
+Poop["_ESPWRD"].Text = ""
+Poop["_ESPWRD"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ESPWRD"].TextSize = 14
+Poop["_ESPWRD"].BackgroundColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.0000165104866)
+Poop["_ESPWRD"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ESPWRD"].BorderSizePixel = 0
+Poop["_ESPWRD"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_ESPWRD"].ZIndex = 2
+Poop["_ESPWRD"].Name = "ESPWRD"
+Poop["_ESPWRD"].Parent = Poop["_Universals"]
+
+Poop["_Title17"].Font = Enum.Font.SourceSansBold
+Poop["_Title17"].Text = "ESP"
+Poop["_Title17"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title17"].TextScaled = true
+Poop["_Title17"].TextSize = 14
+Poop["_Title17"].TextWrapped = true
+Poop["_Title17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title17"].BackgroundTransparency = 1
+Poop["_Title17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title17"].BorderSizePixel = 0
+Poop["_Title17"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title17"].ZIndex = 2
+Poop["_Title17"].Name = "Title"
+Poop["_Title17"].Parent = Poop["_ESPWRD"]
+
+Poop["_Description16"].Font = Enum.Font.SourceSans
+Poop["_Description16"].Text = "By WeAreDevs, this script makes all players visible through walls. You can see their distance and names."
+Poop["_Description16"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description16"].TextScaled = true
+Poop["_Description16"].TextSize = 14
+Poop["_Description16"].TextWrapped = true
+Poop["_Description16"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description16"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description16"].BackgroundTransparency = 1
+Poop["_Description16"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description16"].BorderSizePixel = 0
+Poop["_Description16"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description16"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description16"].ZIndex = 2
+Poop["_Description16"].Name = "Description"
+Poop["_Description16"].Parent = Poop["_ESPWRD"]
+
+Poop["_UIStroke20"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke20"].Thickness = 2
+Poop["_UIStroke20"].Parent = Poop["_ESPWRD"]
+
+Poop["_Games"].AutomaticCanvasSize = Enum.AutomaticSize.XY
+Poop["_Games"].CanvasSize = UDim2.new(0, 0, 0, 0)
+Poop["_Games"].ScrollBarImageColor3 = Color3.fromRGB(90.00000223517418, 142.00000673532486, 233.00000131130219)
+Poop["_Games"].ScrollBarThickness = 0
+Poop["_Games"].ScrollingDirection = Enum.ScrollingDirection.Y
+Poop["_Games"].BackgroundColor3 = Color3.fromRGB(27.000002190470695, 42.000001296401024, 53.000004440546036)
+Poop["_Games"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Games"].BorderSizePixel = 0
+Poop["_Games"].Position = UDim2.new(0, 0, 0, 48)
+Poop["_Games"].Selectable = false
+Poop["_Games"].Size = UDim2.new(1, 0, 1, -58)
+Poop["_Games"].Visible = false
+Poop["_Games"].ZIndex = 2
+Poop["_Games"].Name = "Games"
+Poop["_Games"].Parent = Poop["_Frame"]
+
+Poop["_UIPadding3"].PaddingBottom = UDim.new(0, 10)
+Poop["_UIPadding3"].PaddingLeft = UDim.new(0, 10)
+Poop["_UIPadding3"].PaddingTop = UDim.new(0, 10)
+Poop["_UIPadding3"].Parent = Poop["_Games"]
+
+Poop["_UIListLayout1"].Padding = UDim.new(0, 10)
+Poop["_UIListLayout1"].Parent = Poop["_Games"]
+
+Poop["_UnnamedShooter"].Font = Enum.Font.SourceSans
+Poop["_UnnamedShooter"].Text = ""
+Poop["_UnnamedShooter"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_UnnamedShooter"].TextSize = 14
+Poop["_UnnamedShooter"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_UnnamedShooter"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_UnnamedShooter"].BorderSizePixel = 0
+Poop["_UnnamedShooter"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_UnnamedShooter"].ZIndex = 2
+Poop["_UnnamedShooter"].Name = "UnnamedShooter"
+Poop["_UnnamedShooter"].Parent = Poop["_Games"]
+
+Poop["_Title18"].Font = Enum.Font.SourceSansBold
+Poop["_Title18"].Text = "Unnamed Shooter"
+Poop["_Title18"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title18"].TextScaled = true
+Poop["_Title18"].TextSize = 14
+Poop["_Title18"].TextWrapped = true
+Poop["_Title18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title18"].BackgroundTransparency = 1
+Poop["_Title18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title18"].BorderSizePixel = 0
+Poop["_Title18"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title18"].ZIndex = 2
+Poop["_Title18"].Name = "Title"
+Poop["_Title18"].Parent = Poop["_UnnamedShooter"]
+
+Poop["_UIStroke21"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke21"].Thickness = 2
+Poop["_UIStroke21"].Parent = Poop["_UnnamedShooter"]
+
+Poop["_Description17"].Font = Enum.Font.SourceSans
+Poop["_Description17"].Text = "Cannot find the actual game? Look up the username instead. @Lua_Fish"
+Poop["_Description17"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description17"].TextScaled = true
+Poop["_Description17"].TextSize = 14
+Poop["_Description17"].TextWrapped = true
+Poop["_Description17"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description17"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description17"].BackgroundTransparency = 1
+Poop["_Description17"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description17"].BorderSizePixel = 0
+Poop["_Description17"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description17"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description17"].ZIndex = 2
+Poop["_Description17"].Name = "Description"
+Poop["_Description17"].Parent = Poop["_UnnamedShooter"]
+
+Poop["_MurderersVSSheriffsDuels"].Font = Enum.Font.SourceSans
+Poop["_MurderersVSSheriffsDuels"].Text = ""
+Poop["_MurderersVSSheriffsDuels"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_MurderersVSSheriffsDuels"].TextSize = 14
+Poop["_MurderersVSSheriffsDuels"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_MurderersVSSheriffsDuels"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_MurderersVSSheriffsDuels"].BorderSizePixel = 0
+Poop["_MurderersVSSheriffsDuels"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_MurderersVSSheriffsDuels"].ZIndex = 2
+Poop["_MurderersVSSheriffsDuels"].Name = "MurderersVSSheriffsDuels"
+Poop["_MurderersVSSheriffsDuels"].Parent = Poop["_Games"]
+
+Poop["_Title19"].Font = Enum.Font.SourceSansBold
+Poop["_Title19"].Text = "Murderers VS Sheriffs Duels"
+Poop["_Title19"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title19"].TextScaled = true
+Poop["_Title19"].TextSize = 14
+Poop["_Title19"].TextWrapped = true
+Poop["_Title19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title19"].BackgroundTransparency = 1
+Poop["_Title19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title19"].BorderSizePixel = 0
+Poop["_Title19"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title19"].ZIndex = 2
+Poop["_Title19"].Name = "Title"
+Poop["_Title19"].Parent = Poop["_MurderersVSSheriffsDuels"]
+
+Poop["_UIStroke22"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke22"].Thickness = 2
+Poop["_UIStroke22"].Parent = Poop["_MurderersVSSheriffsDuels"]
+
+Poop["_Description18"].Font = Enum.Font.SourceSans
+Poop["_Description18"].Text = "Cannot find the actual game? Look up the username instead. @Red21_Games"
+Poop["_Description18"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description18"].TextScaled = true
+Poop["_Description18"].TextSize = 14
+Poop["_Description18"].TextWrapped = true
+Poop["_Description18"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description18"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description18"].BackgroundTransparency = 1
+Poop["_Description18"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description18"].BorderSizePixel = 0
+Poop["_Description18"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description18"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description18"].ZIndex = 2
+Poop["_Description18"].Name = "Description"
+Poop["_Description18"].Parent = Poop["_MurderersVSSheriffsDuels"]
+
+Poop["_ImpossibleGlassBridgeOBby"].Font = Enum.Font.SourceSans
+Poop["_ImpossibleGlassBridgeOBby"].Text = ""
+Poop["_ImpossibleGlassBridgeOBby"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ImpossibleGlassBridgeOBby"].TextSize = 14
+Poop["_ImpossibleGlassBridgeOBby"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_ImpossibleGlassBridgeOBby"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ImpossibleGlassBridgeOBby"].BorderSizePixel = 0
+Poop["_ImpossibleGlassBridgeOBby"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_ImpossibleGlassBridgeOBby"].ZIndex = 2
+Poop["_ImpossibleGlassBridgeOBby"].Name = "ImpossibleGlassBridgeOBby"
+Poop["_ImpossibleGlassBridgeOBby"].Parent = Poop["_Games"]
+
+Poop["_Title20"].Font = Enum.Font.SourceSansBold
+Poop["_Title20"].Text = "Impossible Glass Bridge Obby! (Squid Game)"
+Poop["_Title20"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title20"].TextScaled = true
+Poop["_Title20"].TextSize = 14
+Poop["_Title20"].TextWrapped = true
+Poop["_Title20"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title20"].BackgroundTransparency = 1
+Poop["_Title20"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title20"].BorderSizePixel = 0
+Poop["_Title20"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title20"].ZIndex = 2
+Poop["_Title20"].Name = "Title"
+Poop["_Title20"].Parent = Poop["_ImpossibleGlassBridgeOBby"]
+
+Poop["_UIStroke23"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke23"].Thickness = 2
+Poop["_UIStroke23"].Parent = Poop["_ImpossibleGlassBridgeOBby"]
+
+Poop["_Description19"].Font = Enum.Font.SourceSans
+Poop["_Description19"].Text = "Cannot find the actual game? Look up the username instead. @isCreator"
+Poop["_Description19"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description19"].TextScaled = true
+Poop["_Description19"].TextSize = 14
+Poop["_Description19"].TextWrapped = true
+Poop["_Description19"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description19"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description19"].BackgroundTransparency = 1
+Poop["_Description19"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description19"].BorderSizePixel = 0
+Poop["_Description19"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description19"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description19"].ZIndex = 2
+Poop["_Description19"].Name = "Description"
+Poop["_Description19"].Parent = Poop["_ImpossibleGlassBridgeOBby"]
+
+Poop["_FreeRadioBoombox"].Font = Enum.Font.SourceSans
+Poop["_FreeRadioBoombox"].Text = ""
+Poop["_FreeRadioBoombox"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_FreeRadioBoombox"].TextSize = 14
+Poop["_FreeRadioBoombox"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_FreeRadioBoombox"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_FreeRadioBoombox"].BorderSizePixel = 0
+Poop["_FreeRadioBoombox"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_FreeRadioBoombox"].ZIndex = 2
+Poop["_FreeRadioBoombox"].Name = "FreeRadioBoombox"
+Poop["_FreeRadioBoombox"].Parent = Poop["_Games"]
+
+Poop["_Title21"].Font = Enum.Font.SourceSansBold
+Poop["_Title21"].Text = "🔊 FREE RADIO [BOOMBOX] VOICE CHAT!"
+Poop["_Title21"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title21"].TextScaled = true
+Poop["_Title21"].TextSize = 14
+Poop["_Title21"].TextWrapped = true
+Poop["_Title21"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title21"].BackgroundTransparency = 1
+Poop["_Title21"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title21"].BorderSizePixel = 0
+Poop["_Title21"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title21"].ZIndex = 2
+Poop["_Title21"].Name = "Title"
+Poop["_Title21"].Parent = Poop["_FreeRadioBoombox"]
+
+Poop["_UIStroke24"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke24"].Thickness = 2
+Poop["_UIStroke24"].Parent = Poop["_FreeRadioBoombox"]
+
+Poop["_Description20"].Font = Enum.Font.SourceSans
+Poop["_Description20"].Text = "Cannot find the actual game? Look up the username instead. @dametucraneo"
+Poop["_Description20"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description20"].TextScaled = true
+Poop["_Description20"].TextSize = 14
+Poop["_Description20"].TextWrapped = true
+Poop["_Description20"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description20"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description20"].BackgroundTransparency = 1
+Poop["_Description20"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description20"].BorderSizePixel = 0
+Poop["_Description20"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description20"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description20"].ZIndex = 2
+Poop["_Description20"].Name = "Description"
+Poop["_Description20"].Parent = Poop["_FreeRadioBoombox"]
+
+Poop["_DollhouseRoleplay"].Font = Enum.Font.SourceSans
+Poop["_DollhouseRoleplay"].Text = ""
+Poop["_DollhouseRoleplay"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_DollhouseRoleplay"].TextSize = 14
+Poop["_DollhouseRoleplay"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_DollhouseRoleplay"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_DollhouseRoleplay"].BorderSizePixel = 0
+Poop["_DollhouseRoleplay"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_DollhouseRoleplay"].ZIndex = 2
+Poop["_DollhouseRoleplay"].Name = "DollhouseRoleplay"
+Poop["_DollhouseRoleplay"].Parent = Poop["_Games"]
+
+Poop["_Title22"].Font = Enum.Font.SourceSansBold
+Poop["_Title22"].Text = "Dollhouse Roleplay"
+Poop["_Title22"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title22"].TextScaled = true
+Poop["_Title22"].TextSize = 14
+Poop["_Title22"].TextWrapped = true
+Poop["_Title22"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title22"].BackgroundTransparency = 1
+Poop["_Title22"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title22"].BorderSizePixel = 0
+Poop["_Title22"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title22"].ZIndex = 2
+Poop["_Title22"].Name = "Title"
+Poop["_Title22"].Parent = Poop["_DollhouseRoleplay"]
+
+Poop["_UIStroke25"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke25"].Thickness = 2
+Poop["_UIStroke25"].Parent = Poop["_DollhouseRoleplay"]
+
+Poop["_Description21"].Font = Enum.Font.SourceSans
+Poop["_Description21"].Text = "Cannot find the actual game? Look up the username instead. @Jungzehun"
+Poop["_Description21"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description21"].TextScaled = true
+Poop["_Description21"].TextSize = 14
+Poop["_Description21"].TextWrapped = true
+Poop["_Description21"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description21"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description21"].BackgroundTransparency = 1
+Poop["_Description21"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description21"].BorderSizePixel = 0
+Poop["_Description21"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description21"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description21"].ZIndex = 2
+Poop["_Description21"].Name = "Description"
+Poop["_Description21"].Parent = Poop["_DollhouseRoleplay"]
+
+Poop["_HaikyuuLegends"].Font = Enum.Font.SourceSans
+Poop["_HaikyuuLegends"].Text = ""
+Poop["_HaikyuuLegends"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_HaikyuuLegends"].TextSize = 14
+Poop["_HaikyuuLegends"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_HaikyuuLegends"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_HaikyuuLegends"].BorderSizePixel = 0
+Poop["_HaikyuuLegends"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_HaikyuuLegends"].ZIndex = 2
+Poop["_HaikyuuLegends"].Name = "HaikyuuLegends"
+Poop["_HaikyuuLegends"].Parent = Poop["_Games"]
+
+Poop["_Title23"].Font = Enum.Font.SourceSansBold
+Poop["_Title23"].Text = "Haikyuu Legends"
+Poop["_Title23"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title23"].TextScaled = true
+Poop["_Title23"].TextSize = 14
+Poop["_Title23"].TextWrapped = true
+Poop["_Title23"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title23"].BackgroundTransparency = 1
+Poop["_Title23"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title23"].BorderSizePixel = 0
+Poop["_Title23"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title23"].ZIndex = 2
+Poop["_Title23"].Name = "Title"
+Poop["_Title23"].Parent = Poop["_HaikyuuLegends"]
+
+Poop["_UIStroke26"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke26"].Thickness = 2
+Poop["_UIStroke26"].Parent = Poop["_HaikyuuLegends"]
+
+Poop["_Description22"].Font = Enum.Font.SourceSans
+Poop["_Description22"].Text = "Cannot find the actual game? Look up the username instead. @GoodSirVolleyball"
+Poop["_Description22"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description22"].TextScaled = true
+Poop["_Description22"].TextSize = 14
+Poop["_Description22"].TextWrapped = true
+Poop["_Description22"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description22"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description22"].BackgroundTransparency = 1
+Poop["_Description22"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description22"].BorderSizePixel = 0
+Poop["_Description22"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description22"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description22"].ZIndex = 2
+Poop["_Description22"].Name = "Description"
+Poop["_Description22"].Parent = Poop["_HaikyuuLegends"]
+
+Poop["_HideSeekExtreme"].Font = Enum.Font.SourceSans
+Poop["_HideSeekExtreme"].Text = ""
+Poop["_HideSeekExtreme"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_HideSeekExtreme"].TextSize = 14
+Poop["_HideSeekExtreme"].BackgroundColor3 = Color3.fromRGB(255, 85.0000025331974, 0)
+Poop["_HideSeekExtreme"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_HideSeekExtreme"].BorderSizePixel = 0
+Poop["_HideSeekExtreme"].Size = UDim2.new(1, -20, 0, 50)
+Poop["_HideSeekExtreme"].ZIndex = 2
+Poop["_HideSeekExtreme"].Name = "HideSeekExtreme"
+Poop["_HideSeekExtreme"].Parent = Poop["_Games"]
+
+Poop["_Title24"].Font = Enum.Font.SourceSansBold
+Poop["_Title24"].Text = "Hide and Seek Extreme"
+Poop["_Title24"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title24"].TextScaled = true
+Poop["_Title24"].TextSize = 14
+Poop["_Title24"].TextWrapped = true
+Poop["_Title24"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Title24"].BackgroundTransparency = 1
+Poop["_Title24"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Title24"].BorderSizePixel = 0
+Poop["_Title24"].Size = UDim2.new(1, 0, 0.5, -10)
+Poop["_Title24"].ZIndex = 2
+Poop["_Title24"].Name = "Title"
+Poop["_Title24"].Parent = Poop["_HideSeekExtreme"]
+
+Poop["_UIStroke27"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke27"].Thickness = 2
+Poop["_UIStroke27"].Parent = Poop["_HideSeekExtreme"]
+
+Poop["_Description23"].Font = Enum.Font.SourceSans
+Poop["_Description23"].Text = "Cannot find the actual game? Look up the username instead. @Tim7775"
+Poop["_Description23"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description23"].TextScaled = true
+Poop["_Description23"].TextSize = 14
+Poop["_Description23"].TextWrapped = true
+Poop["_Description23"].AnchorPoint = Vector2.new(0, 1)
+Poop["_Description23"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Description23"].BackgroundTransparency = 1
+Poop["_Description23"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Description23"].BorderSizePixel = 0
+Poop["_Description23"].Position = UDim2.new(0, 0, 1, 0)
+Poop["_Description23"].Size = UDim2.new(1, 0, 0.5, 10)
+Poop["_Description23"].ZIndex = 2
+Poop["_Description23"].Name = "Description"
+Poop["_Description23"].Parent = Poop["_HideSeekExtreme"]
+
+Poop["_TABCredits"].Text = "Credits"
+Poop["_TABCredits"].TextColor3 = Color3.fromRGB(204.0000182390213, 204.0000182390213, 204.0000182390213)
+Poop["_TABCredits"].TextStrokeTransparency = 0
+Poop["_TABCredits"].TextWrapped = true
+Poop["_TABCredits"].BackgroundColor3 = Color3.fromRGB(34.00000177323818, 40.00000141561031, 34.00000177323818)
+Poop["_TABCredits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_TABCredits"].BorderSizePixel = 0
+Poop["_TABCredits"].Position = UDim2.new(0, 111, 0, 24)
+Poop["_TABCredits"].Selectable = false
+Poop["_TABCredits"].Size = UDim2.new(0, 46, 0, 24)
+Poop["_TABCredits"].Name = "TABCredits"
+Poop["_TABCredits"].Parent = Poop["_Frame"]
+
+Poop["_Credits"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Credits"].BackgroundTransparency = 1
+Poop["_Credits"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Credits"].BorderSizePixel = 0
+Poop["_Credits"].Position = UDim2.new(0, 0, 0, 48)
+Poop["_Credits"].Size = UDim2.new(1, 0, 1, -58)
+Poop["_Credits"].Visible = false
+Poop["_Credits"].Name = "Credits"
+Poop["_Credits"].Parent = Poop["_Frame"]
+
+Poop["_ImageLabel"].Image = "rbxassetid://10542441997"
+Poop["_ImageLabel"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_ImageLabel"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_ImageLabel"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_ImageLabel"].BorderSizePixel = 0
+Poop["_ImageLabel"].Position = UDim2.new(0.5, 0, 0.5, -25)
+Poop["_ImageLabel"].Size = UDim2.new(0, 130, 0, 110)
+Poop["_ImageLabel"].Parent = Poop["_Credits"]
+
+Poop["_UIStroke28"].Color = Color3.fromRGB(255, 255, 255)
+Poop["_UIStroke28"].Thickness = 5
+Poop["_UIStroke28"].Parent = Poop["_ImageLabel"]
+
+Poop["_Name"].Font = Enum.Font.SourceSans
+Poop["_Name"].Text = "Krypstuen"
+Poop["_Name"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Name"].TextSize = 20
+Poop["_Name"].TextStrokeTransparency = 0
+Poop["_Name"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_Name"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Name"].BackgroundTransparency = 1
+Poop["_Name"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Name"].BorderSizePixel = 0
+Poop["_Name"].Position = UDim2.new(0.5, 0, 0.5, 45)
+Poop["_Name"].Size = UDim2.new(0, 82, 0, 20)
+Poop["_Name"].Name = "Name"
+Poop["_Name"].Parent = Poop["_Credits"]
+
+Poop["_Job"].Font = Enum.Font.SourceSans
+Poop["_Job"].Text = "Loves to eat but not getting fat still."
+Poop["_Job"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Job"].TextSize = 20
+Poop["_Job"].TextStrokeTransparency = 0
+Poop["_Job"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_Job"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_Job"].BackgroundTransparency = 1
+Poop["_Job"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_Job"].BorderSizePixel = 0
+Poop["_Job"].Position = UDim2.new(0.5, 0, 0.5, 65)
+Poop["_Job"].Size = UDim2.new(0, 253, 0, 20)
+Poop["_Job"].Name = "Job"
+Poop["_Job"].Parent = Poop["_Credits"]
+
+Poop["_PoopLogo"].Image = "rbxassetid://12633781505"
+Poop["_PoopLogo"].AnchorPoint = Vector2.new(0.5, 0.5)
+Poop["_PoopLogo"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Poop["_PoopLogo"].BackgroundTransparency = 1
+Poop["_PoopLogo"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_PoopLogo"].BorderSizePixel = 0
+Poop["_PoopLogo"].Position = UDim2.new(0.5, 0, 0.5, 30)
+Poop["_PoopLogo"].Size = UDim2.new(0, 100, 0, 100)
+Poop["_PoopLogo"].Visible = false
+Poop["_PoopLogo"].Name = "PoopLogo"
+Poop["_PoopLogo"].Parent = Poop["_Frame"]
+
+Poop["_TweeningMusic"].SoundId = "rbxassetid://105341164545700"
+Poop["_TweeningMusic"].Volume = 0.25
+Poop["_TweeningMusic"].Name = "TweeningMusic"
+Poop["_TweeningMusic"].Parent = Poop["_PoopHub"]
+
+Poop["_HoveringClose"].SoundId = "rbxassetid://6655787968"
+Poop["_HoveringClose"].Name = "HoveringClose"
+Poop["_HoveringClose"].Parent = Poop["_PoopHub"]
+
+Poop["_RestoreUp"].Image = "rbxassetid://886270278"
+Poop["_RestoreUp"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
+Poop["_RestoreUp"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Poop["_RestoreUp"].BorderSizePixel = 0
+Poop["_RestoreUp"].Position = UDim2.new(0, 21, 0, 72)
+Poop["_RestoreUp"].Size = UDim2.new(0, 32, 0, 32)
+Poop["_RestoreUp"].Visible = false
+Poop["_RestoreUp"].Name = "RestoreUp"
+Poop["_RestoreUp"].Parent = Poop["_PoopHub"]
+
+Poop["_UIStroke29"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Poop["_UIStroke29"].Thickness = 2
+Poop["_UIStroke29"].Parent = Poop["_RestoreUp"]
+
+Poop["_hovers"].SoundId = "rbxassetid://101834244987082"
+Poop["_hovers"].Name = "hovers"
+Poop["_hovers"].Parent = Poop["_PoopHub"]
+
+Poop["_clicking"].SoundId = "rbxassetid://683394607"
+Poop["_clicking"].Name = "clicking"
+Poop["_clicking"].Parent = Poop["_PoopHub"]
+
+Poop["_IsLoaded"].Name = "IsLoaded"
+Poop["_IsLoaded"].Parent = Poop["_PoopHub"]
+
+Poop["_IsGoing"].Name = "IsGoing"
+Poop["_IsGoing"].Parent = Poop["_PoopHub"]
+
+Poop["_PoopHub"].Parent = game.CoreGui
 
 local fake_module_scripts = {}
 
-local function KSQUB_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Icon.OneStepProcess
+local function WEFFEOD_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Icon.OneStepProcess
     local script = Instance.new("LocalScript")
     script.Name = "OneStepProcess"
-    script.Parent = Pooped["_Icon"]
+    script.Parent = Poop["_Icon"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1606,10 +1829,10 @@ local function KSQUB_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Heade
 		end
 	end)
 end
-local function SJCYZR_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Icon.DoubleClickScript
+local function QBCNSXR_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Icon.DoubleClickScript
     local script = Instance.new("LocalScript")
     script.Name = "DoubleClickScript"
-    script.Parent = Pooped["_Icon"]
+    script.Parent = Poop["_Icon"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1633,10 +1856,10 @@ local function SJCYZR_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Head
 	    lastClickTime = currentTime
 	end)
 end
-local function NEXC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Close.LocalScript
+local function IWWLAF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Close.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Close"]
+    script.Parent = Poop["_Close"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1659,10 +1882,10 @@ local function NEXC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header
 		script.Parent.Parent.Parent.PromptClose.Visible = true
 	end)
 end
-local function ZZLSOF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Minimise.LocalScript
+local function THQYY_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.Minimise.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Minimise"]
+    script.Parent = Poop["_Minimise"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1677,10 +1900,10 @@ local function ZZLSOF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Head
 		script.Parent.Parent.Parent.Visible = false
 	end)
 end
-local function FIWZGV_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.JoinWhatsAppGroup.Outro
+local function SBMCKL_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Header.JoinWhatsAppGroup.Outro
     local script = Instance.new("LocalScript")
     script.Name = "Outro"
-    script.Parent = Pooped["_JoinWhatsAppGroup"]
+    script.Parent = Poop["_JoinWhatsAppGroup"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1715,10 +1938,10 @@ local function FIWZGV_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Head
 		toClipboard("https://chat.whatsapp.com/LI7Eb9vYZtJA29bmVnDNCG")
 	end)
 end
-local function SAVXZPQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.SmoothDragUI
+local function YHJQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.SmoothDragUI
     local script = Instance.new("LocalScript")
     script.Name = "SmoothDragUI"
-    script.Parent = Pooped["_Frame"]
+    script.Parent = Poop["_Frame"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1772,10 +1995,10 @@ local function SAVXZPQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Smo
 	
 	dragify(sesomething)
 end
-local function TPRADY_fake_script() -- Fake Script: Workspace.PoopHub.Frame.PromptClose.SureToClose.Outro
+local function VUUN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.PromptClose.SureToClose.Outro
     local script = Instance.new("LocalScript")
     script.Name = "Outro"
-    script.Parent = Pooped["_SureToClose"]
+    script.Parent = Poop["_SureToClose"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1786,36 +2009,47 @@ local function TPRADY_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Prom
     end
 
 	local StarterGui = game:GetService("StarterGui")
+	local tweenMusic = script.Parent.Parent.Parent.Parent.TweeningMusic
+	local dly = tweenMusic.TimeLength
+	local GUIDestroing = script.Parent.Parent.Parent.Parent.IsGoing
+	local prompt = script.Parent.Parent
+	local draggingscript = script.Parent.Parent.Parent.SmoothDragUI
+	local soundSystemEvents = script.Parent.Parent.Parent.Parent.SoundSystem
+	local mainframe = script.Parent.Parent.Parent.Parent.Frame
 	
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Parent.Parent.WhenGUIDestroying:Play()
-		
+	local function notify()
 		StarterGui:SetCore("SendNotification", {
 			Title = "Poop",
-			Text = "Bye Bye, if this message is gone, it means GUI has truly destroyed",
-			Duration = script.Parent.Parent.Parent.Parent.WhenGUIDestroying.TimeLength
+			Text = "Bye, if this message is gone, it means GUI has truly destroyed",
+			Duration = dly
 		})
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		prompt.Visible = false
+		draggingscript.Enabled = false
+		soundSystemEvents.Enabled = false
 		
-		script.Parent.Parent.Parent.SmoothDragUI.Enabled = false
+		GUIDestroing.Value = true
+		tweenMusic:Play()
 		
-		script.Parent.Parent.Parent:TweenPosition(
-			UDim2.new(0.5, script.Parent.Parent.Parent.Position.X.Offset, 1.25, 0),
-			Enum.EasingDirection.InOut,
+		notify()
+		mainframe:TweenPosition(
+			UDim2.new(0.5, mainframe.Position.X.Offset, 1.25, 0),
+			Enum.EasingDirection.In,
 			Enum.EasingStyle.Sine,
-			script.Parent.Parent.Parent.Parent.WhenGUIDestroying.TimeLength
+			dly
 		)
 		
-		script.Parent.Parent.Visible = false
-	
-		task.wait(script.Parent.Parent.Parent.Parent.WhenGUIDestroying.TimeLength)
+		wait(dly)
 		
-		script.Parent.Parent.Parent.Parent:Destroy()
+		mainframe.Parent:Destroy()
 	end)
 end
-local function GQRN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.PromptClose.Cancel.LocalScript
+local function AZOAT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.PromptClose.Cancel.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Cancel"]
+    script.Parent = Poop["_Cancel"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1829,10 +2063,10 @@ local function GQRN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Prompt
 		script.Parent.Parent.Visible = false
 	end)
 end
-local function VIWNHUW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Intro
+local function GDSYHOE_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Intro
     local script = Instance.new("LocalScript")
     script.Name = "Intro"
-    script.Parent = Pooped["_Frame"]
+    script.Parent = Poop["_Frame"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1842,28 +2076,30 @@ local function VIWNHUW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Int
         return req(obj)
     end
 
-	script.Parent.SmoothDragUI.Enabled = false
-	script.Parent.Parent.IsLoaded.Value = false
-	script.Parent.Position = UDim2.new(0.5, 0, -0.25, 0)
+	script.Parent.SmoothDragUI.Enabled = false --[[Avoid user drags the UI when tweening]]
+	script.Parent.Parent.SoundSystem.Enabled = false --[[No hover or clicking noises while tweening]]
 	
-	script.Parent.Parent.WhenGUIDestroying:Play()
+	script.Parent.Parent.TweeningMusic:Play() --[[Plays a music while UI is tweening]]
 	
 	script.Parent:TweenPosition(
 		UDim2.new(0.5, 0, 0.5, 0),
-		Enum.EasingDirection.InOut,
+		Enum.EasingDirection.Out,
 		Enum.EasingStyle.Sine,
-		script.Parent.Parent.WhenGUIDestroying.TimeLength
+		script.Parent.Parent.TweeningMusic.TimeLength
 	)
 	
-	task.wait(script.Parent.Parent.WhenGUIDestroying.TimeLength)
+	task.wait(script.Parent.Parent.TweeningMusic.TimeLength)
 	
-	script.Parent.SmoothDragUI.Enabled = true
-	script.Parent.Parent.IsLoaded.Value = true
+	--[[  AFTER DONE TWEENING  ]]
+	
+	script.Parent.SmoothDragUI.Enabled = true --[[Will be true after done tweening]]
+	script.Parent.Parent.IsLoaded.Value = true --[[Will be true after done tweening]]
+	script.Parent.Parent.SoundSystem.Enabled = true --[[Will be true after done tweening]]
 end
-local function UENPSF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABUniversals.LocalScript
+local function IGTNL_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABUniversals.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_TABUniversals"]
+    script.Parent = Poop["_TABUniversals"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1879,10 +2115,10 @@ local function UENPSF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABU
 		script.Parent.Parent.Credits.Visible = false
 	end)
 end
-local function FWFVA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABGames.LocalScript
+local function SMVVVP_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABGames.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_TABGames"]
+    script.Parent = Poop["_TABGames"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1898,10 +2134,10 @@ local function FWFVA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABGa
 		script.Parent.Parent.Credits.Visible = false
 	end)
 end
-local function UCHFO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.NotLoadedYet.LocalScript
+local function ZEDQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.NotLoadedYet.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_NotLoadedYet"]
+    script.Parent = Poop["_NotLoadedYet"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1912,6 +2148,7 @@ local function UCHFO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.NotLo
     end
 
 	script.Parent.Visible = true
+	script.Parent.Parent.PoopLogo.Visible = true
 	
 	script.Parent.Parent.Parent.IsLoaded.Changed:Connect(function(value)
 		if value == true then
@@ -1922,16 +2159,38 @@ local function UCHFO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.NotLo
 	
 	script.Parent.Parent.TABGames.MouseButton1Click:Connect(function()
 		script.Parent.Text = ""
+		script.Parent.Parent.PoopLogo.Visible = false
 	end)
 	
 	script.Parent.Parent.TABUniversals.MouseButton1Click:Connect(function()
 		script.Parent.Text = ""
+		script.Parent.Parent.PoopLogo.Visible = false
 	end)
+	
+	script.Parent.Parent.TABCredits.MouseButton1Click:Connect(function()
+		script.Parent.Text = ""
+		script.Parent.Parent.PoopLogo.Visible = false
+	end)
+	
+	repeat
+		if script.Parent.Parent.Parent.IsGoing.Value == true then
+			script.Parent.Parent.Games.Visible = false
+			script.Parent.Parent.Universals.Visible = false
+			script.Parent.Parent.Credits.Visible = false
+			
+			script.Parent.Text = "Do not forget to join my WhatsApp group"
+			script.Parent.Size = UDim2.new(0, 291, 0, 20)
+			
+			script.Parent.Parent.PoopLogo.Image = "rbxassetid://14581427215"
+			script.Parent.Parent.PoopLogo.Visible = true
+		end
+		task.wait()
+	until false
 end
-local function BAFMVFW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.AimbotV3.LocalScript
+local function IYRON_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.AimbotV3.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_AimbotV3"]
+    script.Parent = Poop["_AimbotV3"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1945,10 +2204,10 @@ local function BAFMVFW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Uni
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/223d9c2c3bd78e7d9edd43d4c8a271f8/raw"))()
 	end)
 end
-local function KHPCN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Antilag.LocalScript
+local function XAWHY_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Antilag.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Antilag"]
+    script.Parent = Poop["_Antilag"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1962,10 +2221,10 @@ local function KHPCN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Unive
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/7c23e6f4372ca9f258cbf3d2c1ccea9d/raw"))()
 	end)
 end
-local function VOHK_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.BackdoorExecutor.LocalScript
+local function WTBUU_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.BackdoorExecutor.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_BackdoorExecutor"]
+    script.Parent = Poop["_BackdoorExecutor"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1979,10 +2238,10 @@ local function VOHK_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 	end)
 end
-local function TFDRGU_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.CMDX.LocalScript
+local function XFHXD_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.CMDX.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_CMDX"]
+    script.Parent = Poop["_CMDX"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -1996,10 +2255,10 @@ local function TFDRGU_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univ
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
 	end)
 end
-local function VQNE_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.DexExplorerWRD.LocalScript
+local function XTBAZS_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.DexExplorerWRD.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_DexExplorerWRD"]
+    script.Parent = Poop["_DexExplorerWRD"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2013,10 +2272,10 @@ local function VQNE_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
 	end)
 end
-local function INOHD_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.FrontFlipandBackFlipandAirjump.LocalScript
+local function TJEBQT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.FrontFlipandBackFlipandAirjump.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_FrontFlipandBackFlipandAirjump"]
+    script.Parent = Poop["_FrontFlipandBackFlipandAirjump"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2027,13 +2286,13 @@ local function INOHD_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Unive
     end
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/dae434f2904227b33ab49d41519d066a/raw"))()
 	end)
 end
-local function RHUE_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.ToolAssistedSpeedrun.LocalScript
+local function MOIKO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.ToolAssistedSpeedrun.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_ToolAssistedSpeedrun"]
+    script.Parent = Poop["_ToolAssistedSpeedrun"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2047,10 +2306,10 @@ local function RHUE_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/d1ab583cf82933a1286894444c095b00/raw"))()
 	end)
 end
-local function ZMUVF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Hydroxide.LocalScript
+local function XYQJC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Hydroxide.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Hydroxide"]
+    script.Parent = Poop["_Hydroxide"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2064,10 +2323,10 @@ local function ZMUVF_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Unive
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/4004914d7b64b477cc2613d948a67bf8/raw"))()
 	end)
 end
-local function RSBRDCO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.InfiniteYield.LocalScript
+local function KRPKHJ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.InfiniteYield.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_InfiniteYield"]
+    script.Parent = Poop["_InfiniteYield"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2081,10 +2340,10 @@ local function RSBRDCO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Uni
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
 	end)
 end
-local function UWCHJ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Orca.LocalScript
+local function KFCZPO_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Orca.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Orca"]
+    script.Parent = Poop["_Orca"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2098,10 +2357,10 @@ local function UWCHJ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Unive
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/richie0866/orca/master/public/latest.lua"))()
 	end)
 end
-local function TVCQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Owl.LocalScript
+local function BMKSSS_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Owl.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Owl"]
+    script.Parent = Poop["_Owl"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2115,10 +2374,10 @@ local function TVCQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
 	end)
 end
-local function LCCGRA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.SecureDarkDex.LocalScript
+local function JISQ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.SecureDarkDex.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_SecureDarkDex"]
+    script.Parent = Poop["_SecureDarkDex"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2132,10 +2391,10 @@ local function LCCGRA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univ
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end)
 end
-local function WBMT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Space.LocalScript
+local function VLLVAC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.Space.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_Space"]
+    script.Parent = Poop["_Space"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2149,10 +2408,10 @@ local function WBMT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Lucasfin000/Orbit-UI-Library/main/Library", true))()
 	end)
 end
-local function SSGZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.UnnamedESP.LocalScript
+local function MJCVJL_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.UnnamedESP.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_UnnamedESP"]
+    script.Parent = Poop["_UnnamedESP"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2166,10 +2425,10 @@ local function SSGZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Univer
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua'))()
 	end)
 end
-local function XUJGMHP_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.WalkOnWalls.LocalScript
+local function TBNV_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.WalkOnWalls.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_WalkOnWalls"]
+    script.Parent = Poop["_WalkOnWalls"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2183,10 +2442,10 @@ local function XUJGMHP_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Uni
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/28c5ee9b33562d503b9f473c3560cd0d/raw"))()
 	end)
 end
-local function XMNDWYT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.AimbotWRD.LocalScript
+local function GBZTR_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.AimbotWRD.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_AimbotWRD"]
+    script.Parent = Poop["_AimbotWRD"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2200,10 +2459,10 @@ local function XMNDWYT_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Uni
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/75db0f2bf8aed91e58b434a33bf4bdb0/raw"))()
 	end)
 end
-local function REAYZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.ESPWRD.LocalScript
+local function YCTFWP_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Universals.ESPWRD.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_ESPWRD"]
+    script.Parent = Poop["_ESPWRD"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2217,10 +2476,10 @@ local function REAYZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Unive
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/2ee6946e44f0fd2ec730fb1c81390198/raw"))()
 	end)
 end
-local function SYWMZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.UnnamedShooter.LocalScript
+local function XNACDI_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.UnnamedShooter.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_UnnamedShooter"]
+    script.Parent = Poop["_UnnamedShooter"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2234,10 +2493,10 @@ local function SYWMZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/flowisbackk/Sus-Hub/main/Suspect"))()
 	end)
 end
-local function MDSUZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.MurderersVSSheriffsDuels.LocalScript
+local function FOJEC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.MurderersVSSheriffsDuels.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_MurderersVSSheriffsDuels"]
+    script.Parent = Poop["_MurderersVSSheriffsDuels"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2251,10 +2510,10 @@ local function MDSUZ_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/soft-cc/Soft.cc/refs/heads/main/scripts/MVSD.lua"))()
 	end)
 end
-local function HWPWJLW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.ImpossibleGlassBridgeOBby.LocalScript
+local function USRA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.ImpossibleGlassBridgeOBby.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_ImpossibleGlassBridgeOBby"]
+    script.Parent = Poop["_ImpossibleGlassBridgeOBby"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2268,10 +2527,101 @@ local function HWPWJLW_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Gam
 		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/89430f07932aa85cc725859977e5f998/raw"))()
 	end)
 end
-local function LTPKA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABCredits.LocalScript
+local function ACSL_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.FreeRadioBoombox.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_TABCredits"]
+    script.Parent = Poop["_FreeRadioBoombox"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/54220c4c88d065c49fc7a8f90fd229b3/raw"))()
+	end)
+end
+local function AAZK_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.DollhouseRoleplay.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Poop["_DollhouseRoleplay"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://gist.github.com/frzfrsy/8dd92cec1f350a9f1e18633e436e1723/raw"))()
+	end)
+end
+local function PXYQYZA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.HaikyuuLegends.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Poop["_HaikyuuLegends"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/flowisbackk/Sus-Hub/main/Suspect"))()
+	end)
+end
+local function DIBSDN_fake_script() -- Fake Script: Workspace.PoopHub.Frame.Games.HideSeekExtreme.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Poop["_HideSeekExtreme"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	everyClipboard = setclipboard or toclipboard or setclipboard or (Clipboard and Clipboard.set)
+	
+	local StarterGui = game:GetService("StarterGui")
+	
+	local function toClipboard(txt)
+		if everyClipboard then
+			everyClipboard(tostring(txt))
+			StarterGui:SetCore("SendNotification", {
+				Title = "Poop",
+				Text = "Script copied",
+				Duration = 5
+			})
+		else
+			StarterGui:SetCore("SendNotification", {
+				Title = "Poop",
+				Text = "Your executor is not supported hahah",
+				Duration = 5
+			})
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		local copy = loadstring(game:HttpGet("https://gist.github.com/frzfrsy/ef671aa9730061171cfc3ea44b19b2d9/raw"))()
+		
+		toClipboard(copy)
+	end)
+end
+local function QREC_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABCredits.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Poop["_TABCredits"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2287,10 +2637,10 @@ local function LTPKA_fake_script() -- Fake Script: Workspace.PoopHub.Frame.TABCr
 		script.Parent.Parent.Credits.Visible = true
 	end)
 end
-local function FEFIN_fake_script() -- Fake Script: Workspace.PoopHub.RestoreUp.LocalScript
+local function WTKVSG_fake_script() -- Fake Script: Workspace.PoopHub.RestoreUp.LocalScript
     local script = Instance.new("LocalScript")
     script.Name = "LocalScript"
-    script.Parent = Pooped["_RestoreUp"]
+    script.Parent = Poop["_RestoreUp"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2305,10 +2655,10 @@ local function FEFIN_fake_script() -- Fake Script: Workspace.PoopHub.RestoreUp.L
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-local function EXRJIX_fake_script() -- Fake Script: Workspace.PoopHub.SoundSystem
+local function AODFJ_fake_script() -- Fake Script: Workspace.PoopHub.SoundSystem
     local script = Instance.new("LocalScript")
     script.Name = "SoundSystem"
-    script.Parent = Pooped["_PoopHub"]
+    script.Parent = Poop["_PoopHub"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2334,10 +2684,10 @@ local function EXRJIX_fake_script() -- Fake Script: Workspace.PoopHub.SoundSyste
 		end
 	end
 end
-local function BFCGIBK_fake_script() -- Fake Script: Workspace.PoopHub.UntouchableifLoading
+local function JUZO_fake_script() -- Fake Script: Workspace.PoopHub.UntouchableifLoadingINTRO
     local script = Instance.new("LocalScript")
-    script.Name = "UntouchableifLoading"
-    script.Parent = Pooped["_PoopHub"]
+    script.Name = "UntouchableifLoadingINTRO"
+    script.Parent = Poop["_PoopHub"]
     local req = require
     local require = function(obj)
         local fake = fake_module_scripts[obj]
@@ -2347,64 +2697,89 @@ local function BFCGIBK_fake_script() -- Fake Script: Workspace.PoopHub.Untouchab
         return req(obj)
     end
 
-	local function toggleScripts(enabled, abc)
+	repeat
 		for _, child in pairs(script.Parent:GetDescendants()) do
 			if child:IsA("TextButton") or child:IsA("ImageButton") then
-				local scriptInChild = child:FindFirstChildWhichIsA("LocalScript")
-				if scriptInChild then
-					scriptInChild.Enabled = enabled
-				end
-				child.AutoButtonColor = abc
+				child.Interactable = false
 			end
 		end
-	end
-	
-	repeat
-		toggleScripts(false, false)
 		task.wait()
-	until script.Parent.IsLoaded.Value
+	until script.Parent.IsLoaded.Value == true
 	
 	repeat
-		if script.Parent.IsLoaded.Value then
-			toggleScripts(true, true)
+		if script.Parent.IsLoaded.Value == true then
+			for _, child in pairs(script.Parent:GetDescendants()) do
+				if child:IsA("TextButton") or child:IsA("ImageButton") then
+					child.Interactable = true
+				end
+			end
 		end
 		task.wait()
-	until script.Parent.IsLoaded.Value
+	until script.Parent.IsLoaded.Value == true
+end
+local function DNAJW_fake_script() -- Fake Script: Workspace.PoopHub.UntouchableifLoadingOUTRO
+    local script = Instance.new("LocalScript")
+    script.Name = "UntouchableifLoadingOUTRO"
+    script.Parent = Poop["_PoopHub"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	repeat
+		if script.Parent.IsGoing.Value == true then
+			for _, child in pairs(script.Parent:GetDescendants()) do
+				if child:IsA("TextButton") or child:IsA("ImageButton") then
+					child.Interactable = false
+				end
+			end
+		end
+		task.wait()
+	until false
 end
 
-coroutine.wrap(KSQUB_fake_script)()
-coroutine.wrap(SJCYZR_fake_script)()
-coroutine.wrap(NEXC_fake_script)()
-coroutine.wrap(ZZLSOF_fake_script)()
-coroutine.wrap(FIWZGV_fake_script)()
-coroutine.wrap(SAVXZPQ_fake_script)()
-coroutine.wrap(TPRADY_fake_script)()
-coroutine.wrap(GQRN_fake_script)()
-coroutine.wrap(VIWNHUW_fake_script)()
-coroutine.wrap(UENPSF_fake_script)()
-coroutine.wrap(FWFVA_fake_script)()
-coroutine.wrap(UCHFO_fake_script)()
-coroutine.wrap(BAFMVFW_fake_script)()
-coroutine.wrap(KHPCN_fake_script)()
-coroutine.wrap(VOHK_fake_script)()
-coroutine.wrap(TFDRGU_fake_script)()
-coroutine.wrap(VQNE_fake_script)()
-coroutine.wrap(INOHD_fake_script)()
-coroutine.wrap(RHUE_fake_script)()
-coroutine.wrap(ZMUVF_fake_script)()
-coroutine.wrap(RSBRDCO_fake_script)()
-coroutine.wrap(UWCHJ_fake_script)()
-coroutine.wrap(TVCQ_fake_script)()
-coroutine.wrap(LCCGRA_fake_script)()
-coroutine.wrap(WBMT_fake_script)()
-coroutine.wrap(SSGZ_fake_script)()
-coroutine.wrap(XUJGMHP_fake_script)()
-coroutine.wrap(XMNDWYT_fake_script)()
-coroutine.wrap(REAYZ_fake_script)()
-coroutine.wrap(SYWMZ_fake_script)()
-coroutine.wrap(MDSUZ_fake_script)()
-coroutine.wrap(HWPWJLW_fake_script)()
-coroutine.wrap(LTPKA_fake_script)()
-coroutine.wrap(FEFIN_fake_script)()
-coroutine.wrap(EXRJIX_fake_script)()
-coroutine.wrap(BFCGIBK_fake_script)()
+coroutine.wrap(WEFFEOD_fake_script)()
+coroutine.wrap(QBCNSXR_fake_script)()
+coroutine.wrap(IWWLAF_fake_script)()
+coroutine.wrap(THQYY_fake_script)()
+coroutine.wrap(SBMCKL_fake_script)()
+coroutine.wrap(YHJQ_fake_script)()
+coroutine.wrap(VUUN_fake_script)()
+coroutine.wrap(AZOAT_fake_script)()
+coroutine.wrap(GDSYHOE_fake_script)()
+coroutine.wrap(IGTNL_fake_script)()
+coroutine.wrap(SMVVVP_fake_script)()
+coroutine.wrap(ZEDQ_fake_script)()
+coroutine.wrap(IYRON_fake_script)()
+coroutine.wrap(XAWHY_fake_script)()
+coroutine.wrap(WTBUU_fake_script)()
+coroutine.wrap(XFHXD_fake_script)()
+coroutine.wrap(XTBAZS_fake_script)()
+coroutine.wrap(TJEBQT_fake_script)()
+coroutine.wrap(MOIKO_fake_script)()
+coroutine.wrap(XYQJC_fake_script)()
+coroutine.wrap(KRPKHJ_fake_script)()
+coroutine.wrap(KFCZPO_fake_script)()
+coroutine.wrap(BMKSSS_fake_script)()
+coroutine.wrap(JISQ_fake_script)()
+coroutine.wrap(VLLVAC_fake_script)()
+coroutine.wrap(MJCVJL_fake_script)()
+coroutine.wrap(TBNV_fake_script)()
+coroutine.wrap(GBZTR_fake_script)()
+coroutine.wrap(YCTFWP_fake_script)()
+coroutine.wrap(XNACDI_fake_script)()
+coroutine.wrap(FOJEC_fake_script)()
+coroutine.wrap(USRA_fake_script)()
+coroutine.wrap(ACSL_fake_script)()
+coroutine.wrap(AAZK_fake_script)()
+coroutine.wrap(PXYQYZA_fake_script)()
+coroutine.wrap(DIBSDN_fake_script)()
+coroutine.wrap(QREC_fake_script)()
+coroutine.wrap(WTKVSG_fake_script)()
+coroutine.wrap(AODFJ_fake_script)()
+coroutine.wrap(JUZO_fake_script)()
+coroutine.wrap(DNAJW_fake_script)()
