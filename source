@@ -203,6 +203,7 @@ local Poop = {
 Poop["_PoopHub"].IgnoreGuiInset = true
 Poop["_PoopHub"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
 Poop["_PoopHub"].Name = "PoopHub"
+Poop["_PoopHub"].Parent = game.CoreGui
 
 Poop["_Frame"].AnchorPoint = Vector2.new(0.5, 0.5)
 Poop["_Frame"].BackgroundColor3 = Color3.fromRGB(46.000001057982445, 46.000001057982445, 46.000001057982445)
@@ -2781,4 +2782,3 @@ coroutine.wrap(WTKVSG_fake_script)()
 coroutine.wrap(AODFJ_fake_script)()
 coroutine.wrap(JUZO_fake_script)()
 coroutine.wrap(DNAJW_fake_script)()
-Poop["_PoopHub"].Parent = game.CoreGui
